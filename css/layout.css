@@ -21,7 +21,7 @@ header .main-header-inner{
   position: relative;
 }
 
-header .main-header-inner h1{
+header .main-header-inner h1 a{
   display: block;
   width: 90px;
   height: 30px;
@@ -266,11 +266,11 @@ nav{
 }
 
 .konec-part-img{
-  background: url(../img/bg_main_visual.png) no-repeat center / 316px auto;
-  width: 400px;
-  height: 400px;
+  background: url(../img/bg_main_visual.png) no-repeat center / contain;
+  width: 60%;
+  height: 50%;
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%,-50%);
   filter: drop-shadow(0 5px 10px #00000079);
@@ -320,7 +320,7 @@ footer .f-inner{
     height: 70px;   
   }
 
-  header .main-header-inner h1{
+  header .main-header-inner h1 a{
     width: 100px;
     height: 50px;
     background-size: 90px auto;
@@ -433,9 +433,8 @@ footer .f-inner{
   }
 
   .konec-part-img{
-    width: 500px;
-    height: 500px;
-    background-size: 500px auto;
+    width: 50%;
+    height: 60%;
   }
 
   /*태블릿 footer 시작*/
@@ -477,7 +476,7 @@ footer .f-inner{
     height: 75px;
   }
 
-  header .main-header-inner h1{
+  header .main-header-inner h1 a{
     width: 150px;
     height: 50px;
     background-size: 125px auto;
@@ -558,17 +557,16 @@ footer .f-inner{
   }
   
   .konec-visual-right p{
-    font-size: 3.0rem;
+    font-size: 2.4rem;
     bottom: 80px;
     right: 100px;
   }
 
   .konec-part-img{
-    width: 600px;
-    height: 600px
-    ;
-    margin-top: 50px;
-    background-size: 600px auto;
+    width: 60%;
+    height: 50%;
+    top: 60%;
+    left: 47%;
   }
 
   /*PC footer 시작*/
