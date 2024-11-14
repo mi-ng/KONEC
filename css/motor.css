@@ -1,0 +1,1559 @@
+@charset "utf-8";
+
+@media(orientation: portrait) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vh;
+    height: 100vw;
+  }
+}
+
+#moni-wrap {
+  width: 100%;
+  height: 100vh;
+  min-width: 500px;
+  background-color: #111;
+  overflow: auto;
+}
+
+
+.moter-header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.moter-logo {
+  display: none
+}
+
+.moter-text h3 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+}
+
+.motor-cthr-wrap {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  color: #00FFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.motor-cthr-wrap .motor-ct {
+  width: 140px;
+  height: 24px;
+  border: 1px solid #00FFFF;
+  border-radius: 0 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  padding-right: 16px;
+}
+
+.motor-cthr-wrap .motor-ct span {
+  font-size: 1.2rem;
+}
+
+.motor-ct.hr {
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+.motor-ct .ct-text {
+  display: block;
+  padding-left: 5px;
+  line-height: 24px;
+  width: 54px;
+  height: 24px;
+  color: #111;
+  border-radius: 0 0 0 10px;
+  background-color: #00FFFF;
+}
+
+.motor-ct .ct-text.ct {
+  padding-left: 10px;
+}
+
+.motor-ct .ct-text.hr {
+  font-size: 1.0rem;
+}
+
+.motor-time {
+  width: 100px;
+  height: 53px;
+  border: 1px solid #00FFFF;
+  border-radius: 0 15px 0 15px;
+  font-size: 2.0rem;
+  position: relative;
+}
+
+.motor-time p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.motor-close a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/img_m_close.png) no-repeat center / 100% auto;
+  font-size: 0;
+  color: transparent;
+  margin: 0 0 30px 5px;
+  transition: all 0.2s;
+}
+
+.motor-close a:hover {
+  filter: drop-shadow(0 0 0.2rem rgb(255, 254, 245));
+}
+
+
+
+.motor-container-box {
+  width: 100%;
+  height: 140px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.motor-container-box .motor-bg-box {
+  width: calc((100% - 60px) / 7);
+  height: 150px;
+  background-color: #111;
+  position: relative;
+  text-align: center;
+}
+
+/*모니터링 프레임 목표 css 시작*/
+
+.motor-container-box .motor-bg-box .bg-box {
+  color: transparent;
+  font-size: 0;
+  position: absolute;
+}
+
+.motor-container-box .motor-bg-box.box01 .bg-left {
+  height: 80%;
+  width: 16px;
+  background: url(../img/img_center_left_orange.png) no-repeat left center / auto 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.motor-container-box .motor-bg-box.box01 .bg-right {
+  height: 80%;
+  width: 16px;
+  background: url(../img/img_center_right_orange.png) no-repeat right center / auto 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.motor-container-box .motor-bg-box.box01 .bg-top,
+.motor-container-box .motor-bg-box.box01 .bg-bottom {
+  width: calc(100% - 32px);
+  display: flex;
+}
+
+.motor-container-box .motor-bg-box.box01 .bg-top {
+  top: 0.5px;
+  left: 16px;
+}
+
+.motor-container-box .motor-bg-box.box01 .bg-bottom {
+  bottom: -0.5px;
+  left: 16px;
+}
+
+.motor-container-box .motor-bg-box.box01 .bg-top::before,
+.motor-container-box .motor-bg-box.box01 .bg-top::after {
+  content: '';
+  display: block;
+  width: calc((100% - 56px) / 2);
+  height: 22px;
+  background: url(../img/img_top_orange_left.png) repeat-x center bottom / auto 6px;
+}
+
+.motor-container-box .motor-bg-box.box01 .bg-top span {
+  display: block;
+  width: 178px;
+  height: 34px;
+  background: url(../img/img_top_orange.png) no-repeat center / 100% auto;
+}
+
+.motor-container-box .motor-bg-box.box01 .bg-bottom::before,
+.motor-container-box .motor-bg-box.box01 .bg-bottom::after {
+  content: '';
+  display: block;
+  width: calc((100% - 56px) / 2);
+  height: 24px;
+  background: url(../img/img_bottom_orange_left.png) repeat-x center top / auto 5px;
+}
+
+.motor-container-box .motor-bg-box.box01 .bg-bottom span {
+  display: block;
+  width: 178px;
+  height: 11px;
+  background: url(../img/img_bottom_orange.png) no-repeat center / 100% auto;
+}
+
+/*모니터링 프레임 목표 css 끝*/
+
+/*모니터링 프레임 현재목표, 실적 css 끝*/
+
+.motor-container-box .motor-bg-box.box02 .bg-left {
+  height: 80%;
+  width: 16px;
+  background: url(../img/img_center_left_yellow.png) no-repeat left center / auto 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.motor-container-box .motor-bg-box.box02 .bg-right {
+  height: 80%;
+  width: 16px;
+  background: url(../img/img_center_right_yellow.png) no-repeat right center / auto 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.motor-container-box .motor-bg-box.box02 .bg-top,
+.motor-container-box .motor-bg-box.box02 .bg-bottom {
+  width: calc(100% - 32px);
+  display: flex;
+}
+
+.motor-container-box .motor-bg-box.box02 .bg-top {
+  top: -2px;
+  left: 16px;
+}
+
+.motor-container-box .motor-bg-box.box02 .bg-bottom {
+  bottom: -3.5px;
+  left: 16px;
+}
+
+.motor-container-box .motor-bg-box.box02 .bg-top::before,
+.motor-container-box .motor-bg-box.box02 .bg-top::after {
+  content: '';
+  display: block;
+  width: calc((100% - 56px) / 2);
+  height: 22px;
+  background: url(../img/img_top_left_yellow.png) repeat-x center bottom / auto 5px;
+}
+
+.motor-container-box .motor-bg-box.box02 .bg-top span {
+  display: block;
+  width: 169px;
+  height: 35px;
+  background: url(../img/img_top_yellow.png) no-repeat center / 100% auto;
+}
+
+.motor-container-box .motor-bg-box.box02 .bg-bottom::before,
+.motor-container-box .motor-bg-box.box02 .bg-bottom::after {
+  content: '';
+  display: block;
+  width: calc((100% - 56px) / 2);
+  height: 24px;
+  background: url(../img/img_bottom_left_yellow.png) repeat-x center top / auto 5px;
+}
+
+.motor-container-box .motor-bg-box.box02 .bg-bottom span {
+  display: block;
+  width: 512px;
+  height: 12px;
+  background: url(../img/img_bottom_yellow.png) no-repeat center / 100% auto;
+}
+
+/*모니터링 프레임 현재목표, 실적 css 끝*/
+
+/*모니터링 프레임 투입, 양품가동률 css 시작*/
+
+.motor-container-box .motor-bg-box.box03 .bg-left {
+  height: 80%;
+  width: 16px;
+  background: url(../img/img_center_left_green.png) no-repeat left center / auto 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.motor-container-box .motor-bg-box.box03 .bg-right {
+  height: 80%;
+  width: 16px;
+  background: url(../img/img_center_right_green.png) no-repeat right center / auto 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.motor-container-box .motor-bg-box.box03 .bg-top,
+.motor-container-box .motor-bg-box.box03 .bg-bottom {
+  width: calc(100% - 32px);
+  display: flex;
+}
+
+.motor-container-box .motor-bg-box.box03 .bg-top {
+  top: -3px;
+  left: 16px;
+}
+
+.motor-container-box .motor-bg-box.box03 .bg-bottom {
+  bottom: -4px;
+  left: 16px;
+}
+
+.motor-container-box .motor-bg-box.box03 .bg-top::before,
+.motor-container-box .motor-bg-box.box03 .bg-top::after {
+  content: '';
+  display: block;
+  width: calc((100% - 56px) / 2);
+  height: 23.5px;
+  background: url(../img/img_top_left_green.png) repeat-x center bottom / auto 6px;
+}
+
+.motor-container-box .motor-bg-box.box03 .bg-top span {
+  display: block;
+  width: 752px;
+  height: 37px;
+  background: url(../img/img_top_green.png) no-repeat center / 100% auto;
+}
+
+.motor-container-box .motor-bg-box.box03 .bg-bottom::before,
+.motor-container-box .motor-bg-box.box03 .bg-bottom::after {
+  content: '';
+  display: block;
+  width: calc((100% - 56px) / 2);
+  height: 25.5px;
+  background: url(../img/img_bottom_left_green.png) repeat-x center top / auto 6px;
+}
+
+.motor-container-box .motor-bg-box.box03 .bg-bottom span {
+  display: block;
+  width: 752px;
+  height: 14.5px;
+  background: url(../img/img_bottom_green.png) no-repeat center / 100% auto;
+}
+
+/*모니터링 프레임 투입, 양품가동률 css 끝*/
+
+/*모니터링 프레임 불량, 불량률 css 시작*/
+
+.motor-container-box .motor-bg-box.box04 .bg-left {
+  height: 80%;
+  width: 16px;
+  background: url(../img/img_center_left_red.png) no-repeat left center / auto 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.motor-container-box .motor-bg-box.box04 .bg-right {
+  height: 80%;
+  width: 16px;
+  background: url(../img/img_center_right_red.png) no-repeat right center / auto 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.motor-container-box .motor-bg-box.box04 .bg-top,
+.motor-container-box .motor-bg-box.box04 .bg-bottom {
+  width: calc(100% - 32px);
+  display: flex;
+}
+
+.motor-container-box .motor-bg-box.box04 .bg-top {
+  top: -3px;
+  left: 16px;
+}
+
+.motor-container-box .motor-bg-box.box04 .bg-bottom {
+  bottom: -3.5px;
+  left: 16px;
+}
+
+.motor-container-box .motor-bg-box.box04 .bg-top::before,
+.motor-container-box .motor-bg-box.box04 .bg-top::after {
+  content: '';
+  display: block;
+  width: calc((100% - 56px) / 2);
+  height: 23.5px;
+  background: url(../img/img_top_red_left.png) repeat-x center bottom / auto 6px;
+}
+
+.motor-container-box .motor-bg-box.box04 .bg-top span {
+  display: block;
+  width: 448px;
+  height: 36px;
+  background: url(../img/img_top_red.png) no-repeat center / 100% auto;
+}
+
+.motor-container-box .motor-bg-box.box04 .bg-bottom::before,
+.motor-container-box .motor-bg-box.box04 .bg-bottom::after {
+  content: '';
+  display: block;
+  width: calc((100% - 56px) / 2);
+  height: 25px;
+  background: url(../img/img_bottom_red_left.png) repeat-x center top / auto 5px;
+}
+
+.motor-container-box .motor-bg-box.box04 .bg-bottom span {
+  display: block;
+  width: 448px;
+  height: 12px;
+  background: url(../img/img_bottom_red.png) no-repeat center / 100% auto;
+}
+
+/*모니터링 프레임 불량, 불량률 css 끝*/
+
+
+.motor-container-box .motor-txt-wrap {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.motor-container-box .motor-txt-wrap.txtbox02 {
+  color: #FFEC40;
+}
+
+.motor-container-box .motor-txt-wrap.txtbox03 {
+  color: #46DB43;
+}
+
+.motor-container-box .motor-txt-wrap.txtbox04 {
+  color: #FF0000;
+}
+
+.motor-container-box .motor-txt-wrap p {
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.motor-container-box .motor-txt-wrap p.num {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.motor-container-box .motor-txt-wrap .per {
+  font-size: 1.4rem;
+}
+
+/*motor table 시작*/
+.motor-table-box {
+  width: 100%;
+  height: calc(100vh - 278px);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.motor-table-box .motor-table-wrap {
+  width: calc((100% - 10px) / 2);
+}
+
+.motor-table {
+  white-space: nowrap;
+  border-collapse: collapse;
+  text-align: center;
+  height: 100%;
+}
+
+.motor-table td,
+.motor-table th {
+  border: 1px solid #A3A3A3;
+  padding: 5px;
+}
+
+.motor-table th {
+  font-weight: 600;
+  background-color: #343434;
+  color: #fff;
+  border-top: 0;
+}
+
+.motor-table th:first-child {
+  border-left: 0;
+}
+
+.motor-table th:last-child {
+  border-right: 0;
+}
+
+
+
+.motor-table tr:nth-child(2n-1) {
+  background-color: #fff;
+}
+
+.motor-table tr:nth-child(2n) {
+  background-color: #E8E8E8;
+}
+
+.motor-table tbody tr td {
+  height: calc((100vh - 342px) / 8);
+}
+
+.motor-table tbody tr td:first-child {
+  font-weight: 600;
+  width: 35%;
+}
+
+.motor-table td:first-child {
+  border-left: 0;
+}
+
+.motor-table td:nth-child(3) {
+  color: #0366A8;
+}
+
+.motor-table td:last-child {
+  border-right: 0;
+  color: #FF0000;
+}
+
+.motor-bg-box.box01:hover .bg-box {
+  filter: drop-shadow(0 0 0.5rem rgb(255, 120, 9));
+}
+
+.motor-bg-box.box02:hover .bg-box {
+  filter: drop-shadow(0 0 0.5rem rgb(255, 239, 14));
+}
+
+.motor-bg-box.box03:hover .bg-box {
+  filter: drop-shadow(0 0 0.5rem rgb(101, 255, 11));
+}
+
+.motor-bg-box.box04:hover .bg-box {
+  filter: drop-shadow(0 0 0.5rem rgb(255, 11, 11));
+}
+
+/*motor table 끝*/
+
+/*motor 모니터링 영문버전 시작*/
+
+
+.motor-txt-wrap.en p:first-child {
+  width: 98%;
+  font-size: 1.0rem;
+  white-space: wrap;
+}
+
+.motor-table-box.en tr td:first-child {
+  font-size: 1.2rem;
+}
+
+/*motor 모니터링 영문버전 끝*/
+
+/*모니터링 작업환경설정 시작*/
+
+#moni-wrap-add {
+  min-width: 500px;
+}
+
+.moni-dim {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.setting-wrap {
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.setting-wrap .setting-header {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+
+.setting-wrap .setting-header h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.setting-wrap .setting-header .setting-close {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.setting-wrap .setting-header .setting-close a {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(../img/icon_pop_close.png) no-repeat center / 100% auto;
+  font-style: 0;
+  color: transparent;
+}
+
+.setting-container-header {
+  height: 70px;
+  padding: 20px;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.setting-container-header .ct-setting {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.txtbox.setting {
+  width: 40%;
+}
+
+.txtbox.setting #item-txt {
+  width: 100%;
+  margin-left: 20px;
+  text-align: right;
+}
+
+.txtbox.setting input[type="text"] {
+  margin-bottom: 0;
+}
+
+.btn.setting button:first-child {
+  margin-right: 10px;
+}
+
+
+
+/*테이블 시작*/
+
+
+.setting-text p {
+  font-size: 1.6rem;
+  padding: 5px 20px;
+}
+
+
+.setting-table-box {
+  font-size: 1.4rem;
+  height: calc((100% - 163px));
+  white-space: nowrap;
+  overflow-y: scroll;
+  margin: 0 20px;
+}
+
+
+
+.setting-table-box tr th {
+  text-align: center;
+  background-color: #0366A8;
+  color: #fff;
+  border-right: 1px solid #E2E2E2;
+  padding: 10px 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-top: 0;
+}
+
+.setting-table-box tr th:last-child {
+  border-right: 0;
+}
+
+.setting-table tbody tr td {
+  height: calc((700px - 200px) / 16);
+  border-right: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+  font-size: 1.2rem;
+}
+
+.setting-table tbody tr td:nth-child(2n) {
+  padding-left: 10px;
+}
+
+.setting-table tbody tr:nth-child(2n) {
+  background-color: #F4F4F4;
+}
+
+
+
+.setting-table tbody tr td:first-child {
+  text-align: center;
+  padding-left: 0;
+  font-weight: 500;
+}
+
+.setting-table tbody tr td:last-child {
+  border-right: 0;
+}
+
+.inputbox.setting {
+  align-items: center;
+  justify-content: center;
+}
+
+.inputbox.setting .input-box {
+  line-height: 0;
+}
+
+.inputbox.setting label {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 0.1em 0.3em;
+}
+
+.inputbox.setting [type="radio"] {
+  width: 1em;
+  height: 1em;
+}
+
+.inputbox.setting [type="radio"]:checked {
+  border: 0.4rem solid #0366A8;
+}
+
+
+/*테이블 끝*/
+
+
+
+/*모니터링 작업환경설정 끝*/
+
+@media screen and (min-width:500px) {
+  .moter-header {
+    padding: 0 20px;
+  }
+
+  .moter-header .moter-logo {
+    display: block;
+    width: 100px;
+    height: 70px;
+    font-size: 0;
+    color: transparent;
+    background: url(../img/img_konec.png) no-repeat center / contain;
+  }
+
+  .motor-time p {
+    font-size: 2.6rem;
+  }
+
+  .motor-container-box .motor-txt-wrap {
+    position: relative;
+  }
+
+  .motor-container-box .motor-txt-wrap p {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .motor-container-box .motor-txt-wrap .per {
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: -22px;
+    right: 14px;
+  }
+
+
+
+  /*motor 모니터링 영문버전 시작*/
+
+
+  .motor-txt-wrap.en p:first-child {
+    font-size: 1.0rem;
+  }
+
+  .motor-txt-wrap.en .per {
+    font-size: 1.0rem;
+  }
+
+  .motor-txt-wrap.en .per.en01 {
+    bottom: -10px;
+  }
+
+  .motor-table-box.en tr td:first-child {
+    font-size: 1.4rem;
+  }
+
+  /*motor 모니터링 영문버전 끝*/
+
+  /*모니터링 작업환경설정 시작*/
+
+  .setting-wrap {
+    width: 90%;
+    height: 70%;
+  }
+
+  .setting-wrap .setting-header {
+    width: 100%;
+    height: 50px;
+  }
+
+  .setting-wrap .setting-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .setting-container-header {
+    height: 80px;
+  }
+
+  .setting-container-header .ct-setting {
+    width: 52%;
+  }
+
+  .txtbox.setting {
+    width: 45%;
+  }
+
+
+  /*테이블 시작*/
+
+  .setting-text p {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+  }
+
+  .setting-table-box {
+    height: calc((100% - 198px));
+  }
+
+  .setting-table tbody tr td {
+    height: calc((800px - 300px) / 16);
+    font-size: 1.6rem;
+  }
+
+  /*테이블 끝*/
+
+
+
+  /*모니터링 작업환경설정 끝*/
+
+}
+
+@media screen and (min-width:600px) {
+  .setting-table-box {
+    height: 54%;
+  }
+}
+
+@media screen and (min-width:800px) {
+
+  .moter-header {
+    display: flex;
+    justify-content: space-around;
+    height: 135px;
+  }
+
+  .moter-text h3 {
+    color: #fff;
+    font-size: 2.4rem;
+    white-space: nowrap;
+  }
+
+  .motor-cthr-wrap {
+    gap: 15px;
+  }
+
+  .motor-cthr-wrap .motor-ct {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #00FFFF;
+    border-radius: 0 12px 0 12px;
+    letter-spacing: 1px;
+    padding-right: 18px;
+  }
+
+  .motor-cthr-wrap .motor-ct span {
+    font-size: 1.6rem;
+  }
+
+  .motor-ct.ct {
+    padding-right: 28px;
+  }
+
+  .motor-ct.hr {
+    margin-top: 5px;
+    font-size: 1.4rem;
+  }
+
+  .motor-ct .ct-text {
+    display: block;
+    padding-left: 10px;
+    line-height: 30px;
+    width: 70px;
+    height: 30px;
+    color: #111;
+    border-radius: 0 0 0 10px;
+    background-color: #00FFFF;
+  }
+
+  .motor-ct .ct-text.ct {
+    padding-left: 19px;
+  }
+
+  .motor-ct .ct-text.hr {
+    font-size: 1.2rem;
+  }
+
+  .motor-time {
+    width: 130px;
+    height: 65px;
+    border: 2px solid #00FFFF;
+    border-radius: 0 20px 0 20px;
+    font-size: 2.6rem;
+  }
+
+  .motor-close a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .motor-container-box {
+    height: 180px
+  }
+
+  .motor-container-box .motor-txt-wrap p {
+    font-size: 1.8rem;
+  }
+
+  .motor-container-box .motor-txt-wrap p.num {
+    font-size: 3.6rem;
+  }
+
+  .motor-container-box .motor-txt-wrap .per {
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: -17px;
+  }
+
+  /*motor table 시작*/
+
+  .motor-table-box {
+    height: calc(100vh - 438px);
+  }
+
+  .motor-table th {
+    font-size: 1.8rem;
+  }
+
+  .motor-table tbody tr td {
+    font-size: 2.2rem;
+    height: calc((100vh - 500px) / 8);
+  }
+
+  .motor-table td,
+  .motor-table th {
+    padding: 8px 7px;
+  }
+
+  /*motor table 끝*/
+
+  /*motor 모니터링 영문버전 시작*/
+
+  .motor-txt-wrap.en p:first-child {
+    font-size: 1.2rem;
+  }
+
+  .motor-table-box.en tr td:first-child {
+    font-size: 1.8rem;
+  }
+
+  .inputbox.setting [type="radio"]:checked {
+    border: 0.5rem solid #0366A8;
+  }
+
+  /*motor 모니터링 영문버전 끝*/
+
+  /*모니터링 작업환경설정 시작*/
+
+  .setting-wrap {
+    width: 90%;
+    height: 82%;
+  }
+
+  .setting-table-box {
+    height: calc((100% - 200px));
+  }
+
+  .setting-table tbody tr td {
+    height: calc((850px - 300px) / 16);
+  }
+
+  .inputbox.setting label {
+    font-size: 1.6rem;
+  }
+
+  /*모니터링 작업환경설정 끝*/
+
+}
+
+@media screen and (min-width:1024px) {
+  .moter-header {
+    justify-content: space-between;
+    height: 170px;
+    padding: 0 20px;
+  }
+
+  .moter-header .moter-logo {
+    width: 150px;
+    height: 70px;
+    background-size: 100% auto;
+  }
+
+  .moter-text h3 {
+    color: #fff;
+    font-size: 3.0rem;
+    white-space: nowrap;
+  }
+
+  .motor-container-box .motor-txt-wrap p {
+    font-size: 2.6rem;
+  }
+
+  .motor-container-box .motor-txt-wrap p.num {
+    font-size: 4.8rem;
+  }
+
+  .motor-container-box .motor-txt-wrap .per {
+    font-size: 1.8rem;
+    bottom: -5px;
+    right: 11px;
+  }
+
+  .motor-cthr-wrap .motor-ct {
+    width: 200px;
+    height: 40px;
+    border: 2px solid #00FFFF;
+    border-radius: 0 12px 0 12px;
+    padding-right: 22px;
+  }
+
+  .motor-ct .ct-text {
+    padding-left: 10px;
+    line-height: 40px;
+    height: 40px;
+  }
+
+  .motor-ct.ct {
+    padding-right: 28px;
+  }
+
+  .motor-ct.hr {
+    margin-top: 5px;
+    font-size: 1.4rem;
+  }
+
+  .motor-time {
+    width: 200px;
+    height: 85px;
+  }
+
+  .motor-time p {
+    font-size: 4.0rem;
+  }
+
+  .motor-container-box {
+    height: 200px;
+  }
+
+  /*모니터링 프레임 목표 css 시작*/
+
+
+  .motor-container-box .motor-bg-box.box01 .bg-left {
+    height: 95%;
+  }
+
+  .motor-container-box .motor-bg-box.box01 .bg-right {
+    height: 95%;
+  }
+
+  .motor-container-box .motor-bg-box.box01 .bg-top {
+    top: 1.5px;
+    left: 16px;
+  }
+
+  .motor-container-box .motor-bg-box.box01 .bg-bottom {
+    bottom: -0.5px;
+    left: 16px;
+  }
+
+  .motor-container-box .motor-bg-box.box01 .bg-top::before,
+  .motor-container-box .motor-bg-box.box01 .bg-top::after {
+    height: 13px;
+    background: url(../img/img_top_orange_left.png) repeat-x center bottom / auto 7px;
+  }
+
+  .motor-container-box .motor-bg-box.box01 .bg-top span {
+    width: 120px;
+    height: 14px;
+  }
+
+  .motor-container-box .motor-bg-box.box01 .bg-bottom::before,
+  .motor-container-box .motor-bg-box.box01 .bg-bottom::after {
+    height: 15px;
+    background: url(../img/img_bottom_orange_left.png) repeat-x center top / auto 7px;
+  }
+
+  .motor-container-box .motor-bg-box.box01 .bg-bottom span {
+    width: 120px;
+    height: 12px;
+  }
+
+  /*모니터링 프레임 목표 css 끝*/
+
+  /*모니터링 프레임 현재목표, 실적 css 끝*/
+
+  .motor-container-box .motor-bg-box.box02 .bg-left {
+    height: 95%;
+  }
+
+  .motor-container-box .motor-bg-box.box02 .bg-right {
+    height: 95%;
+    width: 16px;
+  }
+
+  .motor-container-box .motor-bg-box.box02 .bg-top {
+    top: -12px;
+    left: 16px;
+  }
+
+  .motor-container-box .motor-bg-box.box02 .bg-bottom {
+    bottom: -3.5px;
+    left: 16px;
+  }
+
+  .motor-container-box .motor-bg-box.box02 .bg-top::before,
+  .motor-container-box .motor-bg-box.box02 .bg-top::after {
+    height: 25px;
+    background: url(../img/img_top_left_yellow.png) repeat-x center bottom / auto 7px;
+  }
+
+  .motor-container-box .motor-bg-box.box02 .bg-top span {
+    width: 164px;
+    height: 36px;
+  }
+
+  .motor-container-box .motor-bg-box.box02 .bg-bottom::before,
+  .motor-container-box .motor-bg-box.box02 .bg-bottom::after {
+    height: 16px;
+    background: url(../img/img_bottom_left_yellow.png) repeat-x center top / auto 7px;
+  }
+
+  .motor-container-box .motor-bg-box.box02 .bg-bottom span {
+    width: 162px;
+    height: 15px;
+  }
+
+  /*모니터링 프레임 현재목표, 실적 css 끝*/
+
+  /*모니터링 프레임 투입, 양품가동률 css 시작*/
+
+  .motor-container-box .motor-bg-box.box03 .bg-left {
+    height: 95%;
+  }
+
+  .motor-container-box .motor-bg-box.box03 .bg-right {
+    height: 95%;
+  }
+
+  .motor-container-box .motor-bg-box.box03 .bg-top {
+    top: -12px;
+    left: 16px;
+  }
+
+  .motor-container-box .motor-bg-box.box03 .bg-bottom {
+    bottom: -13px;
+    left: 16px;
+  }
+
+  .motor-container-box .motor-bg-box.box03 .bg-top::before,
+  .motor-container-box .motor-bg-box.box03 .bg-top::after {
+    height: 23.5px;
+    background: url(../img/img_top_left_green.png) repeat-x center bottom / auto 6px;
+  }
+
+  .motor-container-box .motor-bg-box.box03 .bg-top span {
+    width: 125px;
+    height: 37px;
+  }
+
+  .motor-container-box .motor-bg-box.box03 .bg-bottom::before,
+  .motor-container-box .motor-bg-box.box03 .bg-bottom::after {
+    height: 25.5px;
+    background: url(../img/img_bottom_left_green.png) repeat-x center top / auto 6px;
+  }
+
+  .motor-container-box .motor-bg-box.box03 .bg-bottom span {
+    width: 123px;
+    height: 13px;
+  }
+
+  /*모니터링 프레임 투입, 양품가동률 css 끝*/
+
+  /*모니터링 프레임 불량, 불량률 css 시작*/
+
+  .motor-container-box .motor-bg-box.box04 .bg-left {
+    height: 95%;
+  }
+
+  .motor-container-box .motor-bg-box.box04 .bg-right {
+    height: 95%;
+  }
+
+  .motor-container-box .motor-bg-box.box04 .bg-top {
+    top: -3px;
+    left: 16px;
+  }
+
+  .motor-container-box .motor-bg-box.box04 .bg-bottom {
+    bottom: -3.5px;
+    left: 16px;
+  }
+
+  .motor-container-box .motor-bg-box.box04 .bg-top::before,
+  .motor-container-box .motor-bg-box.box04 .bg-top::after {
+    height: 15.5px;
+    background: url(../img/img_top_red_left.png) repeat-x center bottom / auto 7px;
+  }
+
+  .motor-container-box .motor-bg-box.box04 .bg-top span {
+    width: 142px;
+    height: 19px;
+  }
+
+  .motor-container-box .motor-bg-box.box04 .bg-bottom::before,
+  .motor-container-box .motor-bg-box.box04 .bg-bottom::after {
+    height: 16px;
+    background: url(../img/img_bottom_red_left.png) repeat-x center top / auto 6px;
+  }
+
+  .motor-container-box .motor-bg-box.box04 .bg-bottom span {
+    width: 145px;
+    height: 12px;
+  }
+
+  /*모니터링 프레임 불량, 불량률 css 끝*/
+
+  /*motor table 시작*/
+
+  .motor-table-box {
+    padding: 10px 20px;
+  }
+
+  .motor-table th {
+    font-size: 2.8rem;
+  }
+
+  .motor-table tbody tr td {
+    font-size: 2.8rem;
+  }
+
+  /*motor table 끝*/
+
+  /*motor 모니터링 영문버전 시작*/
+
+  .motor-txt-wrap.en p:first-child {
+    font-size: 1.4rem;
+  }
+
+  .motor-txt-wrap.en .per.en02 {
+    bottom: -14px;
+  }
+
+  .motor-table-box.en tr td:first-child {
+    font-size: 2.0rem;
+  }
+
+  /*motor 모니터링 영문버전 끝*/
+
+  /*모니터링 작업환경설정 시작*/
+
+  .setting-container-header {
+    padding: 20px 30px;
+  }
+
+  .setting-table-box {
+    height: calc((100% - 218px));
+  }
+
+  .setting-table tbody tr td {
+    font-size: 2.0rem;
+  }
+
+  .setting-table-box tr th {
+    font-size: 1.6rem;
+  }
+
+  .inputbox.setting label {
+    font-size: 1.8rem;
+  }
+
+  .inputbox.setting [type="radio"] {
+    width: 1.4em;
+    height: 1.4em;
+  }
+
+  /*모니터링 작업환경설정 끝*/
+}
+
+@media screen and (min-width:1200px) {
+
+  .moter-text h3 {
+    font-size: 5.2rem;
+  }
+
+  .motor-container-box .motor-txt-wrap .per {
+    font-size: 2.4rem;
+    right: 10px;
+  }
+
+  .motor-time {
+    width: 240px;
+  }
+
+  .motor-time p {
+    font-size: 4.2rem;
+  }
+
+  .motor-close a {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*motor 모니터링 영문버전 시작*/
+
+  .motor-txt-wrap.en p:first-child {
+    font-size: 1.4rem;
+  }
+
+  .motor-table-box.en tr td:first-child {
+    font-size: 2.4rem;
+  }
+
+  /*motor 모니터링 영문버전 끝*/
+
+  /*모니터링 작업환경설정 시작*/
+
+  .setting-wrap {
+    height: 85%;
+  }
+
+  .setting-container-header {
+    height: 100px;
+    padding: 25px 40px;
+  }
+
+  .setting-container-header .ct-setting {
+    width: 34%;
+  }
+
+  .setting-table-box tr th {
+    font-size: 1.8rem;
+  }
+
+  .setting-table tbody tr td:first-child {
+    padding: 0;
+  }
+
+  .setting-table tbody tr td {
+    padding: 0 20px;
+  }
+
+  /*모니터링 작업환경설정 끝*/
+
+}
+
+@media screen and (min-width:1400px) {
+
+  .motor-cthr-wrap .motor-ct {
+    width: 260px;
+    height: 40px;
+    border: 2px solid #00FFFF;
+    letter-spacing: 2px;
+    padding-right: 40px;
+  }
+
+  .motor-cthr-wrap .motor-ct span {
+    font-size: 1.8rem;
+  }
+
+
+  .motor-ct .ct-text {
+    padding-left: 10px;
+    line-height: 40px;
+    width: 100px;
+    height: 40px;
+  }
+
+  .motor-ct .ct-text.ct {
+    padding-left: 10px;
+  }
+
+  .motor-ct .ct-text.hr {
+    font-size: 1.6rem;
+  }
+
+  .motor-time {
+    width: 300px;
+    height: 85px;
+  }
+
+  .motor-time p {
+    font-size: 4.4rem;
+  }
+
+  /*모니터링 작업환경설정 시작*/
+
+  .setting-wrap {
+    height: 87%;
+  }
+
+  .setting-container-header {
+    padding: 30px 50px;
+  }
+
+  .setting-container-header .ct-setting {
+    width: 35%;
+  }
+
+  .inputbox.setting label {
+    font-size: 2.0rem;
+  }
+
+  /*모니터링 작업환경설정 끝*/
+
+}
+
+@media screen and (min-width:1400px) {
+
+  .motor-txt-wrap.en p:first-child {
+    font-size: 1.6rem;
+  }
+
+  .motor-txt-wrap.en .per.en01 {
+    bottom: -4px;
+  }
+
+  .setting-table-box {
+    height: ((100% - 300px));
+  }
+
+}
+
+@media screen and (min-width:1900px) {
+  .moter-header {
+    padding: 0 20px;
+  }
+
+  .moter-header .moter-logo {
+    width: 250px;
+    height: 200px;
+  }
+
+  .moter-text h3 {
+    font-size: 7rem;
+  }
+
+  .motor-cthr-wrap {
+    gap: 30px;
+    padding-left: 50px;
+}
+
+  .motor-cthr-wrap .motor-ct {
+    width: 300px;
+    height: 60px;
+    padding-right: 20px;
+  }
+
+  .motor-cthr-wrap .motor-ct span {
+    font-size: 2.2rem;
+    line-height: 58px;
+  }
+
+  .motor-ct .ct-text {
+    padding-left: 20px;
+    line-height: 56px;
+    width: 140px;
+    height: 60px;
+  }
+
+  .motor-ct .ct-text.ct {
+    padding-left: 28px;
+  }
+
+  .motor-cthr-wrap .motor-ct a {
+    font-size: 2.4rem;
+  }
+
+  .motor-ct.hr {
+    margin-top: 15px;
+  }
+
+  .motor-time {
+    height: 135px;
+  }
+
+  .motor-time p {
+    font-size: 5.0rem;
+  }
+
+  .motor-container-box .motor-txt-wrap p {
+    font-size: 3.0rem;
+  }
+
+  .motor-container-box .motor-txt-wrap p.num {
+    font-size: 4.4rem;
+  }
+
+  .motor-table-box {
+    height: calc(100vh - 379px);
+  }
+
+  .motor-table tbody tr td {
+    font-size: 3.2rem;
+  }
+
+  /*모터 영문버전 시작*/
+  .motor-txt-wrap.en p:first-child {
+    font-size: 2.6rem;
+  }
+
+  .motor-txt-wrap.en .per.en01{
+    bottom: 8px;
+  }
+    /*모터 영문버전 끝*/
+}

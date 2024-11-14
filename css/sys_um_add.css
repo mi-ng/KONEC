@@ -1,0 +1,876 @@
+@charset "utf-8";
+
+  /*sys_um_add_kr CSS 시작*/
+
+.sys-um-add-kr-dim {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.sys-um-add-kr-pop {
+  background-color: #fff;
+  width: 90vw;
+  height: 95vh;
+  border: 1px solid #aaa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+/*팝업 흰색 배경*/
+
+.sys-um-add-kr-pop span {
+  font-size: 1.8rem;
+  white-space: nowrap; 
+}
+
+.sys-um-add-kr-pop h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #aaa;
+  padding: 15px 0 13px;
+  margin-bottom: 10px;
+}
+
+.sys-um-add-kr-pop .pop-close {
+  width: 16px;
+  height: 16px;
+  background: url(../img/icon_pop_close.png) no-repeat center / cover;
+  position: absolute;
+  top: 15px;
+  right: 18px;
+}
+
+/*닫기*/
+
+.sys-um-add-kr-pop-wrap {
+  height: calc(100% - 55px);
+  overflow-y: scroll;
+  padding: 0 30px;
+  background-color: #fff;
+}
+
+.sys-um-add-kr-pop .red-star {
+  color: #ff0000;
+}
+
+/*텍스트박스*/
+
+.sys-um-add-kr-pop .txtbox input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #aaaaaa;
+  padding: 0 10px;
+}
+
+.sys-um-add-kr-pop .txtbox #item-txt {
+  width: 100%;
+}
+
+input[type="text"].active {
+  border: 1px solid #0366A8 !important;
+  background-color: #fff !important;
+}
+
+/*패스워드박스*/
+
+.sys-um-add-kr-pop .passbox input[type="password"] {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #aaaaaa;
+  padding: 0 10px;
+}
+
+.sys-um-add-kr-pop .passbox #item-password {
+  width: 100%;
+}
+
+input[type="password"].active{
+  border: 1px solid #0366A8 !important;
+  background-color: #fff !important;
+}
+
+.sys-um-add-kr-pop .sys-um-add-kr-box {
+  padding-top: 15px;
+}
+
+.sys-um-add-kr-pop .input-check {
+  align-items: center;
+  display: flex;
+}
+
+/*내용 감싸는 박스*/
+
+.sys-um-add-kr-pop .input-txt {
+  padding-top:0;
+}
+
+/*input-txt 간격*/
+
+.sys-um-add-kr-pop .input-txt label {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.sys-um-add-kr-pop .sys-um-add-kr-box .input-txt label span {
+  color: #FF0000;
+}
+
+/*필수사항 표시*/
+
+.sys-um-add-kr-pop .input-txt input {
+  display: inline-block;
+  background-color: #fff;
+  width: 90%;
+  height: 30px;
+  border: 1px solid #aaaaaa;
+  border-radius: 7px;
+  font-size: 1.8rem;
+}
+
+/*input-txt 글 쓰는 박스*/
+
+.user-id .txtbox .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-id .txtbox #item-txt {
+  width: 60%;
+}
+
+.sys-um-add-kr-pop .input-txt input#user-id {
+  width: 60%;
+}
+
+/*중복확인 때문에 값을 따로 줌*/
+
+.user-id {
+  position: relative;
+}
+
+.sys-um-add-over-check {
+  width: 30%;
+  height: 30px;
+  border: 2px solid #0366A8;
+  display: inline-block;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 25px;
+  color: #0366A8;
+  cursor: pointer;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+/*중복체크*/
+
+.sys-um-add-over-check:hover {
+  background-color: #0366A8;
+  color: #fff;
+}
+
+.sys-um-add-kr-pop .sys-um-add-kr-box .input-pass input {
+  -webkit-text-security: disc;
+}
+
+/*비밀번호 동그라미로 변환*/
+
+.sys-um-add-kr-pop .sys-um-add-kr-box .input-check label {
+  cursor: pointer;
+  font-size: 1.8rem;
+  line-height: 25px;
+  margin-right: 10px;
+}
+
+/*사용여부*/
+
+.sys-um-add-kr-pop  .input-check input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background: url(../img/icon_user_check.png) no-repeat center / cover;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  appearance: none;
+}
+
+.sys-um-add-kr-pop  .input-check label{
+  margin-right: 10px;
+}
+
+/*사용여부 체크박스*/
+
+.sys-um-add-kr-pop  .input-check input[type="checkbox"]:checked {
+  background-color: #0366A8;
+}
+
+.sys-um-add-kr-pop .rule {
+  color: #E27321;
+  padding: 10px 0;
+}
+
+/*셀렉트인풋*/
+.sys-um-add-kr-pop .selectbox {
+  display: block;
+  height: 30px;
+}
+
+.sys-um-add-kr-pop .selectbox .select-tab {
+  position: relative;
+  height: 30px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.sys-um-add-kr-pop-content02 .span-box {
+  padding: 5px 0;
+}
+
+
+
+.sys-um-add-kr-pop .selectbox select {
+  appearance: none;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #aaaaaa;
+  border-radius: 7px;
+}
+
+.sys-um-add-kr-pop .selectbox select option {
+  text-align: center;
+  font-size: 1.8rem;
+  background: #fff;
+}
+
+
+
+/*이미지 업로드*/
+.sys-um-add-kr-img .file-label {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.sys-um-add-kr-img .file-label p {
+  display: none;
+}
+
+.sys-um-add-kr-img .file-label label {
+  display: inline-block;
+  width: 130px;
+  height: 85px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  position: relative;
+}
+
+/*이미지 업로드 박스*/
+
+.sys-um-add-kr-img .file-label-img .drop-img {
+  width: 27px;
+  height: 27px;
+  background: url(../img/icon_img_drop.png) no-repeat center / contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*플러스 아이콘*/
+
+.sys-um-add-kr-img .file-label-img span {
+  display: none;
+}
+
+.sys-um-add-kr-img .file[type="file"] {
+  display: none;
+}
+
+/*파일선택 버튼 안보이게*/
+
+.sys-um-add-kr.btn {
+  text-align: center;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+.sys-um-add-kr.btn::after {
+  content: "";
+  display: block;
+  width: 90%;
+  border-bottom: 1px solid #aaa;
+  margin: 20px auto;
+}
+
+/*추가/삭제 버튼 아래 구분 선*/
+
+.sys-um-add-kr.btn #add {
+  margin-right: 10px;
+}
+
+/*추가 버튼 간격*/
+
+.sys-um-add-kr-pop .tel-box .tel-box input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #aaaaaa;
+  padding: 0 10px;
+}
+
+.sys-um-add-kr-pop .tel-box .tel-box #item-txt {
+  width: 30%;
+}
+
+
+.sys-um-add-kr-pop .tel-box .input-tel-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sys-um-add-kr-pop .tel-box input[id=item-txt].active {
+  border: 1px solid #0366A8;
+  background-color: #fff;
+}
+
+
+.sys-um-add-kr-pop .tel-box {
+  padding-top: 30px;
+}
+
+.sys-um-add-kr-pop .input-tel-box span {
+  width: 10px;
+  height: 1px;
+  background-color: #000;
+}
+
+.sys-um-add-kr-pop .tel-box label {
+  display: none;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.sys-um-add-kr-pop .tel-box input {
+  display: inline-block;
+  background-color: #fff;
+  width: 30%;
+  height: 30px;
+  border: 1px solid #aaaaaa;
+  border-radius: 7px;
+  font-size: 1.8rem;
+  padding: 0 10px;
+}
+
+/*휴대전화 칸*/
+
+.sys-um-add-kr-pop .tel-box #phone1,
+#phone2 {
+  margin-right: 7px;
+}
+
+
+.sys-um-add-kr.name-inputbox {
+  display: flex;
+}
+
+.sys-um-add-kr-pop .input-radiobox span {
+  font-size: 1.8rem;
+  display: block;
+  letter-spacing: -1px;
+}
+
+.sys-um-add-kr-pop label{
+  display: flex;
+  align-items: center;
+}
+
+.input-box span{
+  padding-left: 10px;
+}
+
+
+
+.sys-um-add-kr2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 250px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+
+.sys-um-add-kr2.btn {
+  margin-right: 10px;
+  padding-bottom: 15px;
+}
+
+.sys-um-add-kr2.btn>button {
+  margin: 0 10px 10px 0;
+}
+
+/*sys_um_add_kr CSS 끝*/
+
+
+ 
+@media screen and (min-width : 768px) {
+
+ /*sys_um_add_kr CSS 시작*/
+
+  .sys-um-add-kr-pop.en .sys-um-add-kr-pop-contnet{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+
+  .sys-um-add-kr-up {
+    width: 50%;
+  }
+
+  .sys-um-add-kr-pop {
+    width: 70%;
+    height: 87vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
+
+  .sys-um-add-kr-img {
+    width: 45%;
+  }
+
+  .sys-um-add-kr-pop h3 {
+    font-size: 2.2rem;
+    padding-bottom: 15px;
+  }
+
+  /*사용자 등록 제목*/
+
+  .sys-um-add-kr-pop .pop-close {
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    right: 20px;
+  }
+
+  /*닫기*/
+
+
+
+
+  .sys-um-add-kr-pop .input-txt label {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .sys-um-add-kr-pop .input-txt input {
+    width: 95%;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 2rem;
+  }
+
+  /*input-txt 글 쓰는 박스*/
+
+  .sys-um-add-kr-pop .input-txt input#user-id {
+    width: 65%;
+  }
+
+  .user-id .txtbox #item-txt {
+    width: 68%;
+  }
+
+  /*중복확인 때문에 값을 따로 줌*/
+
+  .sys-um-add-over-check {
+    width: 30%;
+    border-radius: 7px;
+    line-height: 26px;
+    font-size: 1.6rem;
+    white-space: nowrap !important;
+  }
+
+  /*중복확인*/
+
+
+  .sys-um-add-kr-img .file-label label {
+    width: 100%;
+    height: 190px;
+    margin-top: 50px;
+  }
+
+  /*이미지 업로드 박스*/
+
+  .sys-um-add-kr-img .file-label-img .drop-img {
+    width: 34px;
+    height: 34px;
+    top: 35%;
+  }
+
+
+
+  .sys-um-add-kr-img .file-label span {
+    display: block;
+    color: #aaaaaa;
+    padding-top: 95px;
+    font-size: 1.4rem;
+
+  }
+
+  /*플러스 아이콘*/
+
+  .btn {
+    flex-wrap: nowrap;
+  }
+
+  .sys-um-add-kr-pop .sys-um-add-kr-box {
+    align-items: right;
+  }
+
+  .sys-um-add-kr-pop .sys-um-add-kr-box .input-check label,
+  .sys-um-add-kr-pop .sys-um-add-kr-box p {
+    font-size: 2rem;
+  }
+
+  .sys-um-add-kr.btn::after {
+    display: none;
+  }
+
+  /*추가/삭제 버튼 아래 구분 선*/
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #aaa;
+    margin: 20px auto;
+  }
+
+  /*내용 나누는 중간 선*/
+
+  .sys-um-add-kr-down-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .sys-um-add-kr-down-wrap .selectbox {
+    width: 50%;
+  }
+
+
+
+  .sys-um-add-kr-pop .tel-box {
+    width: 35%;
+    padding-top: 0;
+  }
+
+  /*부서명, 휴대폰 나란히*/
+
+  .sys-um-add-kr-pop .sys-um-add-kr-down-wrap .input-txt {
+    width: 50%;
+  }
+
+  /*부서명 공간*/
+
+  .sys-um-add-kr-pop .input-tel {
+    width: 50%;
+  }
+
+  /*휴대폰 공간*/
+
+  .sys-um-add-kr-pop .input-tel input {
+    width: 20%;
+    font-size: 2rem;
+  }
+
+  /*휴대폰 칸*/
+
+
+  .input-radiobox span {
+    font-size: 2rem;
+    display: block;
+  }
+
+  .sys-um-add-kr-pop-wrap {
+    padding: 0 50px;
+  }
+
+  .sys-um-add-kr-pop-wrap::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sys-um-add-kr-pop-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .sys-um-add-kr2 {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
+/*sys_um_add_kr CSS 끝*/
+
+
+/*1200px 시작*/
+@media screen and (min-width : 1200px) {
+
+  /*sys_um_add_kr CSS 시작*/
+
+  .sys-um-add-kr-pop .txtbox,
+  .sys-um-add-kr-pop .passbox {
+    display: flex;
+    padding: 10px 0;
+  }
+
+  .sys-um-add-kr-pop .passbox #item-password,
+  .sys-um-add-kr-pop .txtbox #item-txt {
+    width: 40%;
+    margin-left: 50px;
+    height: 40px;
+  }
+
+  .sys-um-add-kr-pop .txtbox input[type="text"] {
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+  }
+
+
+  .sys-um-add-kr-pop .txtbox .user-id {
+    display: inline-block;
+  }
+
+  .sys-um-add-kr-up .span-box label {
+    white-space: nowrap !important;
+  }
+
+
+  /*패스워드박스*/
+
+  .sys-um-add-kr-pop .passbox input[type="password"] {
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+  }
+
+
+
+  .user-id .txtbox .input-box {
+    display: flex;
+    justify-content: right;
+  }
+
+
+  .sys-um-add-kr-pop {
+    width: 70%;
+    height: 85vh;
+  }
+
+  .sys-um-add-kr-up {
+    width: 55%;
+  }
+
+
+
+  .sys-um-add-kr-up .span-box {
+    width: 130px;
+    text-align: right;
+    margin-right: 30px;
+    white-space: nowrap !important;
+  }
+
+  .sys-um-add-kr-up .span-box .red-star {
+    margin-right: 5px;
+  }
+
+  .sys-um-add-kr-up .input-box {
+    width: 60%;
+  }
+
+  .sys-um-add-kr-pop .sys-um-add-kr-up span {
+    display: inline-block;
+    line-height: 40px;
+
+  }
+
+  .sys-um-add-kr-pop h3 {
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+  }
+
+  .sys-um-add-kr-pop .sys-um-add-kr-box {
+    font-size: 2.4rem;
+  }
+
+  /*폰트사이즈 24*/
+
+
+  .sys-um-add-kr-pop  .input-check label{
+    margin-right: 0;
+    justify-content: right;
+  }
+
+
+
+  .sys-um-add-kr-pop .input-txt input {
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .sys-um-add-kr-pop .rule {
+    padding-left: 50px;
+  }
+
+  /*input-txt 글 쓰는 박스*/
+
+  .sys-um-add-kr-pop .input-txt input#user-id {
+    width: 50%;
+  }
+
+  /*중복확인 때문에 값을 따로 줌*/
+
+  .sys-um-add-over-check {
+    display: block;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 36px;
+    font-size: 2rem;
+  }
+
+
+  /*중복확인*/
+
+  .sys-um-add-kr-pop .sys-um-add-kr-box .input-check label {
+    margin-right: 50px;
+  }
+
+  .sys-um-add-kr-img {
+    width: 40%;
+  }
+
+
+  .sys-um-add-kr-img .file-label label {
+    width: 90%;
+    height: 266px;
+    margin-top: 7px;
+  }
+
+  /*이미지 업로드 박스*/
+
+  .sys-um-add-kr-down-wrap>div {
+    display: flex;
+  }
+
+  .sys-um-add-kr-down-wrap .tel-box {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .sys-um-add-kr-pop-content02 span {
+    font-size: 2rem;
+  }
+
+  .sys-um-add-kr-pop-content02 .span-box {
+    width: 130px;
+    text-align: right;
+    margin-right: 30px;
+    white-space: nowrap !important;
+    line-height: 40px;
+  }
+
+  /*셀렉트인풋*/
+  .sys-um-add-kr-pop .selectbox {
+    display: flex;
+    height: 40px;
+  }
+
+
+  .sys-um-add-kr-pop .selectbox .select-tab {
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .sys-um-add-kr-pop .selectbox select {
+    appearance: none;
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  .sys-um-add-kr-down-wrap .selectbox {
+    width: 55%;
+    align-items: center;
+  }
+
+  .sys-um-add-kr-pop .tel-box input {
+
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+
+  }
+
+  .sys-um-add-kr-down-wrap {
+    justify-content: left;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .sys-um-add-kr-img .file-label-img .drop-img {
+    top: 40%;
+  }
+
+  .sys-um-add-kr-img .file-label span {
+    padding-top: 135px;
+    font-size: 1.6rem;
+}
+
+  .sys-um-add-kr-pop .input-radiobox {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  /*플러스 아이콘*/
+
+  .sys-um-add-kr-img .file-label p {
+    display: block;
+  }
+
+  /*드롭메시지 표시*/
+
+  .sys-um-add-kr2 {
+    margin-top: 0px;
+   
+    justify-content: right;
+   
+  }
+
+  .sys-um-add-kr2.btn {
+   margin-top: 30px;
+  }
+
+   /*sys_um_add_kr CSS 끝*/
+}

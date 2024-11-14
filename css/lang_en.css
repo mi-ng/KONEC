@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+.en .btn button[type="button"] {
+  width: 100px;
+  height: 32px;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.en .btn-ok button {
+  width: 130px !important;
+  height: 32px !important;
+  color: #2EA051;
+  border: 1px solid #2EA051;
+  border-radius: 16px !important;
+}
+
+.en .btn-ok button:hover {
+  color: #fff;
+  background-color: #2EA051;
+}
+
+.en .src-con-tab span {
+  display: block;
+  width: 230px;
+  height: 30px;
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 29px;
+  position: relative;
+  border-bottom: 30px solid #0366A8;
+  border-right: 15px solid transparent;
+}
+
+.btn #continu-save {
+  width: 110px;
+  color: #9B03A8;
+  border: 1px solid #9B03A8;
+}
+
+.en .src-con-tab span {
+  display: block;
+  width: 230px;
+  height: 30px;
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 29px;
+  position: relative;
+  border-bottom: 30px solid #0366A8;
+  border-right: 15px solid transparent;
+}
+
+.sys-um-kr.en .src-con-content select {
+    width: 180px;
+    padding-right: 20px;
+}
+
+
+@media screen and (min-width:768px) {
+
+  .en .btn button[type="button"] {
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .en .btn button[type="button"] {
+    width: 120px;
+  }
+
+  .mm-tppr-kr.en .mm-tppr-kr-item p span {
+    width: 185px;
+  }
+
+  .en .btn-ok button {
+    width: 150px !important;
+    height: 35px !important;
+    color: #2EA051;
+    border: 1px solid #2EA051;
+    border-radius: 18px !important;
+  }
+
+  .pqi.en  .mm-tppr-kr-item p {
+    white-space: nowrap;
+    margin-right: 20px;    
+    width: 137px;
+  }
+
+  .pqi.en .selectbox p {
+    margin-right: 20px;
+    letter-spacing: 5px;
+    padding: 10px 0;
+    white-space: nowrap;
+    width: 125px;
+    
+}
+
+.btn #continu-save {
+  width: 130px;
+}
+
+.en .mm-pti-kr.en .mm-tppr-kr-item p {
+  width: 139px;
+  text-align: right;
+}
+
+.en .mm-tppr-kr-item p {
+  white-space: nowrap;
+  margin-right: 73px;
+  width: 139px;
+
+}
+
+}
+
+@media screen and (min-width:1200px) {
+
+  .en .btn button[type="button"] {
+    width: 170px;
+    height: 54px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.3);
+  }
+
+
+  .en .btn-ok button {
+    width: 170px !important;
+    height: 40px !important;
+    color: #2EA051;
+    border: 1px solid #2EA051;
+    border-radius: 20px !important;
+  }
+
+  .mm-tppr-kr.en .mm-tppr-kr-item p span {
+    width: 185px;
+    margin-right: 30px;
+  }
+
+  .mm-tppr-kr.en .txtbox #item-txt {
+    width: 40%;
+  }
+
+  .en .mm-tppr-kr-item p span{
+    width: 200px;
+  }
+
+  .en .mm-tppr-kr-item p span {
+    display: block;
+    width: 139px;
+    white-space: nowrap;
+    margin-right: 30px;
+  }
+
+  .en .mm-pti-kr.en .mm-tppr-kr-item p {
+    width: 139px;
+  }
+
+  .mm-pti-kr.en .mm-tppr-kr-item p {
+    width: 139px;
+    text-align: right;
+  }
+
+  .sys-ads-add-kr-popup-body.en  label {
+    font-size: 2.4rem;
+    display: block;
+    width: 230px !important;
+    padding-right: 30px;
+    text-align: right;
+  }
+
+  .btn #continu-save {
+    width: 200px;
+  }
+
+  .sys-um-kr.en .src-con-content .src-item p,
+  .sys-um-kr.en .src-con-content .sys-operation p {
+      width: 100px;
+  }
+
+  .ppnm.en .datewrap .mm-tppr-kr-item p,
+  .ppnm.en .mm-tppr-kr-operation p {
+    width: 100px;
+    margin-right: 30px;
+    text-align: right;
+} 
+
+}

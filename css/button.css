@@ -1,0 +1,716 @@
+@charset "utf-8";
+
+/*버튼 css*/
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn button[type="button"] {
+  width: 80px;
+  height: 32px;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.btn .sc-key {
+  display: none;
+}
+
+.btn span {
+  padding-left: 5px;
+  font-size: 1.8rem;
+}
+
+.btn a {
+  width: 12px;
+  height: 13px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+
+.btn #search {
+  color: #E27321;
+  border: 1px solid #E27321;
+
+}
+
+.btn #search a {
+  background-image: url(../img/icon_search.png);
+}
+
+.btn #search:hover {
+  color: #fff;
+  background-color: #E27321;
+}
+
+.btn #search:hover a {
+  background-image: url(../img/icon_search_w.png)
+}
+
+.btn #add {
+  color: #03A877;
+  border: 1px solid #03A877;
+}
+
+.btn #add a {
+  background-image: url(../img/icon_add.png);
+}
+
+.btn #add:hover {
+  color: #fff;
+
+  background-color: #03A877;
+}
+
+.btn #add:hover a {
+  background-image: url(../img/icon_add_w.png);
+}
+
+.btn #del {
+  color: #A8032B;
+  border: 1px solid #A8032B;
+}
+
+.btn #del a {
+  background-image: url(../img/icon_delete.png);
+}
+
+.btn #del:hover {
+  color: #fff;
+  background-color: #A8032B;
+}
+
+.btn #del:hover a {
+  background-image: url(../img/icon_delete_w.png);
+}
+
+.btn #excel {
+  color: #0366A8;
+  border: 1px solid #0366A8;
+}
+
+.btn #excel a {
+  background-image: url(../img/icon_excel.png);
+}
+
+.btn #excel:hover {
+  color: #fff;
+  background-color: #0366A8;
+}
+
+.btn #excel:hover a {
+  background-image: url(../img/icon_excel_w.png);
+}
+
+.btn #reset {
+  width: 100px;
+  color: #404040;
+  border: 1px solid #404040;
+}
+
+.btn #reset a {
+  background-image: url(../img/icon_reset.png);
+}
+
+.btn #reset:hover {
+  color: #fff;
+  background-color: #404040;
+}
+
+.btn #reset:hover a {
+  background-image: url(../img/icon_reset_w.png);
+}
+
+.btn #save {
+  color: #9B03A8;
+  border: 1px solid #9B03A8;
+}
+
+.btn #save a {
+  background-image: url(../img/icon_save.png);
+}
+
+.btn #save:hover {
+  color: #fff;
+  background-color: #9B03A8;
+}
+
+.btn #save:hover a {
+  background-image: url(../img/icon_save_w.png);
+}
+
+.btn #close {
+  color: #111111;
+  border: 1px solid #111111;
+}
+
+.btn #close a {
+  background-image: url(../img/icon_close.png);
+}
+
+.btn #close:hover {
+  color: #fff;
+  background-color: #111111;
+}
+
+.btn #close:hover a {
+  background-image: url(../img/icon_close_w.png);
+}
+
+.btn #continu-save {
+  width: 100px;
+  color: #9B03A8;
+  border: 1px solid #9B03A8;
+}
+
+.btn #continu-save a {
+  background-image: url(../img/icon_save.png);
+}
+
+.btn #continu-save:hover {
+  color: #fff;
+  background-color: #9B03A8;
+}
+
+.btn #continu-save:hover a {
+  background-image: url(../img/icon_save_w.png);
+}
+
+
+.btn #upload {
+  width: 136px;
+  color: #03A877;
+  border: 1px solid #03A877;
+}
+
+.btn #upload a {
+  background-image: url(../img/icon_add.png);
+}
+
+.btn #upload:hover {
+  color: #fff;
+  background-color: #03A877;
+}
+
+.btn #upload:hover a {
+  background-image: url(../img/icon_add_w.png);
+}
+
+.btn #marking {
+  width: 150px;
+  color: #111111;
+  border: 1px solid #111111;
+}
+
+.btn #marking a {
+  background-image: url(../img/icon_gear.png);
+}
+
+.btn #marking:hover {
+  color: #fff;
+  background-color: #111111;
+}
+
+.btn #marking:hover a {
+  background-image: url(../img/icon_gear_w.png);
+}
+
+.btn-ok button {
+  width: 90px !important;
+  height: 32px !important;
+  color: #2EA051;
+  border: 1px solid #2EA051;
+  border-radius: 16px !important;
+}
+
+.btn-ok button a {
+  background-image: url(../img/icon_user_check_g.png);
+  background-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.btn-ok button:hover {
+  color: #fff;
+  background-color: #2EA051;
+}
+
+.btn-ok button:hover a {
+  background-image: url(../img/icon_user_check.png);
+}
+
+/*라디오 버튼 css*/
+
+/* .name-inputbox {
+  display: flex;
+}
+
+.name-inputbox input[type="radio"] {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.name-inputbox input[type="radio"]+label {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 15px;
+  white-space: nowrap;
+}
+
+.name-inputbox input[type="radio"]+label::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.name-inputbox input[type="radio"]:checked+label::before {
+  border: 1px solid #0366A8;
+}
+
+.name-inputbox input[type="radio"]:checked+label::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #0366A8;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+} */
+
+.inputbox{
+  display: flex;
+  white-space: nowrap;
+}
+
+.inputbox label {
+  font-size: 18px;
+  line-height: 2rem;
+  margin-right: 15px;
+}
+
+.inputbox [type="radio"], span {
+  vertical-align: middle;
+}
+
+.inputbox [type="radio"] {
+  appearance: none;
+  border: max(2px, 0.1em) solid #aaaaaa;
+  border-radius: 50%;
+  width: 1.25em;
+  height: 1.25em;
+  transition: border 0.1s ease-in-out;
+  margin: 0;
+}
+
+.inputbox [type="radio"]:checked {
+  border: 0.4em solid #0366A8;
+  background-color: #fff;
+}
+
+
+.inputbox [type="radio"]:focus-visible {
+  outline-offset: max(2px, 0.1em);
+  outline: max(2px, 0.1em) dotted #0366A8;
+}
+
+.inputbox [type="radio"]:hover {
+  box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+  cursor: pointer;
+}
+
+.inputbox [type="radio"]:hover + span {
+  cursor: pointer;
+}
+
+.inputbox [type="radio"]:disabled {
+  background-color: lightgray;
+  box-shadow: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.inputbox [type="radio"]:disabled + span {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+/*셀렉트인풋*/
+
+.selectbox select {
+  width: inherit;
+  height: inherit;
+  background: #fff;
+  border: 0 none;
+  outline: 0 none;
+  padding: 0 5px;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.8rem;
+  z-index: 3;
+  background: url(../img/icon_select_down.png)no-repeat 95% center / 10px 8px;
+  height: 30px;
+  border-radius: 7px;
+}
+
+.selectbox select {
+  appearance: none;
+  width: 160px;
+  background-color: #ffffff;
+  border: 1px solid #aaaaaa;
+  border-radius: 7px;
+}
+
+.selectbox select option {
+  text-align: center;
+  font-size: 1.8rem;
+  background: #fff;
+}
+
+.selectbox select option:hover {
+  text-align: center;
+  font-size: 1.8rem;
+  background: #fff;
+}
+
+.selectbox select.active {
+  border: 1px solid #0366A8 !important;
+  background: #fff url(../img/icon_select_up.png)no-repeat 95% center / 10px 8px !important;
+}
+
+/*텍스트박스*/
+
+input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #aaaaaa;
+  padding: 0 10px;
+}
+
+.txtbox #item-txt {
+  width: 30%;
+}
+
+input[type="text"].active,
+input[type="password"].active,
+input[type="date"].active {
+  border: 1px solid #0366A8 !important;
+  background-color: #fff !important;
+}
+
+/*패스워드박스*/
+
+.passbox input[type="password"] {
+  width: 160px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 1px solid #aaaaaa;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.passbox #item-password {
+  width: 30%;
+}
+
+
+/*날짜선택탭*/
+
+.datebox input[type="date"] {
+  background-color: #ffffff;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0 20px;
+  border: 1px solid #aaaaaa;
+}
+
+
+
+/*토글버튼*/
+.toggleSwitch {
+  width: 216px;
+  margin: 30px;
+  height: 48px;
+  display: block;
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid #E27321;
+  background-color: #fff;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.toggleSwitch .toggle-txt {
+  width: 216px;
+  height: 48px;
+  padding: 0 25px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 9;
+}
+
+.toggleSwitch .motor {
+  color: #fff;
+}
+
+/* .toggleSwitch span{
+  display:inline-block;
+  width: 50px;
+} */
+
+.toggleSwitch .inverter {
+  color: #E27321;
+}
+
+.toggleSwitch .toggleButton {
+  width: 108px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 30px;
+  background: #E27321;
+}
+
+.toggleSwitch.active {
+  background: transparent;
+}
+
+.toggleSwitch.active .toggle-txt .motor {
+  color: #E27321;
+}
+
+.toggleSwitch.active .toggle-txt .inverter {
+  color: #fff;
+}
+
+.toggleSwitch.active .toggleButton {
+  left: calc(100% - 108px);
+  background: #E27321;
+}
+
+.toggleSwitch,
+.toggleButton {
+  transition: all 500ms cubic-bezier(0.18, -0.12, 0.24, 1.91);
+}
+
+/*체크박스*/
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: url(../img/icon_user_check.png) no-repeat center / cover;
+  background-color: #fff;
+  cursor: pointer;
+  appearance: none;
+  border: 2px solid #ccc;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #588bad;
+  border: 0;
+}
+
+
+/* 768 시작 */
+
+@media screen and (min-width:768px) {
+  .btn button[type="button"] {
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn a {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+  }
+
+  .btn-ok button {
+    width: 110px !important;
+    height: 35px !important;
+    border-radius: 18px !important;
+    gap: 3px;
+  }
+
+
+  .btn-ok button a {
+    background-size: 21px;
+    width: 21px;
+    height: 21px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"] {
+    height: 35px ;
+    border-radius: 10px ;
+  }
+
+  .selectbox select {
+    height: 35px;
+    border-radius: 10px;
+  }
+
+  .datebox input[type="date"] {
+    height: 35px;  
+  }
+
+
+}
+
+@media screen and (min-width:1024px){
+  .btn button[type="button"] {
+    width: 120px;
+    height: 45px;
+  }
+
+
+}
+
+/* 1200 시작 */
+
+@media screen and (min-width:1200px) {
+
+  .btn button[type="button"] {
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn a {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+  }
+
+  .btn .sc-key {
+    display: inline-block;
+  }
+
+  .btn .sc-key {
+    padding-left: 3px;
+    font-size: 2.2rem;
+  }
+
+  .btn #reset,
+  .btn #upload,
+  .btn #close {
+    width: 170px;
+  }
+
+  .btn #marking,
+  .btn #continu-save {
+    width: 200px;
+  }
+
+  .btn-ok button {
+    width: 130px !important;
+    border-radius: 50px !important;
+    height: 40px !important;
+    gap: 5px !important;
+  }
+
+  .btn-ok button a {
+    background-size: 24px !important;
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"] {
+    height: 40px !important;
+  }
+
+  .selectbox select {
+    height: 40px;
+  }
+
+  /*토글버튼*/
+  .toggleSwitch {
+    width: 242px;
+    height: 54px;
+  }
+
+  .toggleSwitch .toggle-txt {
+    width: 242px;
+    height: 54px;
+  }
+
+  .toggleSwitch .toggleButton {
+    width: 121px;
+    height: 55px;
+  }
+
+  .toggleSwitch.active .toggleButton {
+    left: calc(100% - 121px);
+    background: #E27321;
+  }
+
+
+
+
+
+
+}
+
+@media screen and (min-width:1400px){
+  .btn button[type="button"] {
+    width: 160px;
+    height: 54px;
+
+  }
+
+  .btn #reset,
+  .btn #upload,
+  .btn #close {
+    width: 170px;
+  }
+}

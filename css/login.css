@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+#login-wrap {
+  background-color: #eaeaea;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-width: 370px;
+  margin: 0 auto;
+}
+
+#inner {
+  width: 370px;
+  height: 720px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.login-imgbox {
+  position: relative;
+  width: 370px;
+  height: 280px;
+}
+
+.login-txtbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 9;
+  display: block;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.login-img {
+  width: 100%;
+  height: 280px;
+  background: url(../img/bg_login.jpg)no-repeat center /cover;
+}
+
+.login-infobox {
+  background-color: #fff;
+  height: 440px;
+  padding-top: 30px;
+}
+
+.login-infobox h1 {
+  font-size: 0;
+  color: transparent;
+  width: 100px;
+  height: 35px;
+  background: url(../img/img_konec.png)no-repeat center / 100px 35px;
+  margin: 0 auto 25px;
+}
+
+.login-infobox h4 {
+  font-size: 2.4rem;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+.login-infobox h4 img{
+  width: 5px;
+  height: 18px;
+  margin: -5px 0 0 -20px;
+}
+
+.login-lang {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.login-lang input[type="radio"] {
+  appearance: none;
+}
+
+.login-lang input[type="radio"]+label {
+  width: 95px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+.login-lang input[type="radio"]+label:hover{
+  opacity: 0.8;
+}
+
+.login-lang input[type="radio"]:checked+label {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.login-info {
+  text-align: center;
+}
+
+.login-info input[type="text"] {
+  width: 80%;
+  height: 45px;
+  border-radius: 30px;
+  display: inline-block;
+  border: 1px solid #aaa;
+  box-shadow: 4px 2px 7px rgba(0,0,0,0.2);
+  padding: 0 30px;
+  font-size: 2.2rem;
+  padding-left: 30px;
+  background-color: #fff;
+}
+
+.login-info input[type="text"]:hover{
+  opacity: 0.8;
+}
+
+
+.login-info input:first-child[type="text"] {
+  margin-bottom: 15px;
+}
+
+.save-info {
+  text-align: center;
+  margin: 15px 0 20px;
+  position: relative;
+}
+
+.save-info input[type="checkbox"] {
+  display: none;
+}
+
+.save-info .on {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  cursor: pointer;
+  transition: border 0.1s ease-in-out;
+}
+
+.save-info .on:hover{
+  box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+}
+
+.login-info #password{
+  -webkit-text-security: disc;
+}
+
+
+
+.save-info input[type="checkbox"]:checked+.on {
+  border: 4.5px solid #f07822;
+  background-color: #fff;
+}
+
+.save-info .save-txt {
+  font-size: 1.6rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.submit {
+  text-align: center;
+  position: relative;
+}
+
+
+.submit .on {
+  content: "";
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #f07822;
+  color: #fff;
+  line-height: 40px;
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.submit .img {
+  width: 17px;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  margin-top: 15px;
+  background: url(../img/login_arrow.png) right / 17px 10px;
+}
+
+.submit input[type="submit"] {
+  display: none;
+}
+
+/*768*/
+
+@media screen and (min-width:768px) {
+  #inner {
+    width: 80%;
+    display: flex;
+  }
+
+  .login-imgbox {
+    width: 50%;
+    height: 650px;
+  }
+
+  .login-img {
+    height: 650px;
+  }
+
+  .login-infobox {
+    width: 50%;
+    height: 650px;
+    padding-left: 50px;
+  }
+  
+
+  .login-txtbox {
+    width: 300px;
+    font-size: 3rem;
+  }
+
+  .login-infobox h1 {
+    width: 130px;
+    height: 46px;
+    background: url(../img/konec_logo.png)no-repeat center / 130px 46px;
+    margin: 80px 0 25px;
+  }
+
+  .login-infobox h4 {
+    text-align: left;
+  }
+
+  .login-lang {
+    text-align: left;
+    margin: 30px -10px;
+  }
+
+  .login-info {
+    text-align: left;
+  }
+
+  .save-info {
+    text-align: left;
+    margin: 20px 0 25px;
+  }
+
+  .submit {
+    text-align: left;
+  }
+  
+  .submit .on {
+    width: 180px;
+    height: 45px;
+    line-height: 40px;
+    font-size: 2.2rem;
+    padding-left: 45px;
+  }
+  
+  .submit .img {
+    width: 21px;
+    height: 12px;
+    right: 40px;
+    margin-top: 15px;
+    background: url(../img/login_arrow.png) right / 21px 12px;
+  }
+
+
+
+
+}
+
+/* 1200 */
+
+@media screen and (min-width:1200px){
+
+  #inner {
+    width: 80%;
+  }
+
+  .login-imgbox {
+    width: 50%;
+    height: 700px;
+  }
+
+  .login-img {
+    height: 700px;
+  }
+
+  .login-infobox {
+    width: 50%;
+    height: 700px;
+    padding-left: 100px;
+  }
+
+  .login-infobox h1 {
+    width: 150px;
+    height: 53px;
+    background: url(../img/konec_logo.png)no-repeat center / 150px 53px;
+    margin: 80px 0 25px;
+  }
+
+  .login-infobox h4{
+    font-size: 3.5rem;
+  }
+
+  .login-infobox h4 img{
+    width: 5px;
+    height: 25px;
+    margin: -7px 0 0 -20px;
+  }
+  
+
+  .login-txtbox {
+    width: 300px;
+    font-size: 3.5rem;
+  }
+
+  .save-info {
+    margin: 20px 0 30px;
+  }
+
+  .login-info input[type="text"] {
+    width: 354px;
+    height: 60px !important;
+  }
+
+  .login-lang input[type="radio"]+label {
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .submit .on {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2.4rem;
+    padding-left: 50px;
+  }
+
+  .submit .img {
+    width: 23px;
+    height: 15px;
+    right: 40px;
+    margin-top: 18px;
+    background: url(../img/login_arrow.png) right / 23px 15px;
+  }
+
+  .login-info input[type="text"] {
+    font-size: 2.4rem;
+  }
+
+
+
+}
+
+
+
+
