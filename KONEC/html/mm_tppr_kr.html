@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>[MOTOR] 테슬라 제품포장등록</title>
+  <link rel="stylesheet" href="../css/import.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+  <div id="sys-wrap">
+    <header>
+      <div class="main-header-inner">
+        <h1><a href="#">로고</a></h1>
+        <nav>
+          <ul class="gnb font-weight-700">
+            <li>
+              <a href="#">시스템 관리</a>
+              <ul class="depth2">
+                <li><a href="#">사용자 관리</a></li>
+                <li><a href="#">안돈 오작동값 세팅</a></li>
+                <li><a href="#">재로그인</a></li>
+                <li><a href="#">암호변경</a></li>
+                <li><a href="#">버전관리</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">MOTOR 제품포장관리</a>
+              <ul class="depth2">
+                <li><a href="#">테슬라 제품포장등록</a></li>
+                <li><a href="#">가공추적조회</a></li>
+                <li><a href="#">공정품질조회</a></li>
+                <li><a href="#">가공설비조회</a></li>
+                <li><a href="#">마감정보등록</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">INVERTER 제품포장관리</a>
+              <ul class="depth2">
+                <li><a href="#">테슬라 제품포장등록</a></li>
+                <li><a href="#">가공추적조회</a></li>
+                <li><a href="#">공정품질조회</a></li>
+                <li><a href="#">가공설비조회</a></li>
+                <li><a href="#">마감정보등록</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">모니터링</a>
+              <ul class="depth2">
+                <li><a href="#">[MOTOR] <br> MONITORING</a></li>
+                <li><a href="#">[INVERTER] <br> MONITORING</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">관리자 메뉴</a>
+              <ul class="depth2">
+                <li><a href="#">후보정 NG 관리</a></li>
+                <li><a href="#">마스터 모드 관리</a></li>
+                <li><a href="#">소재투입 횟수 관리</a></li>
+                <li><a href="#">누락정보등록</a></li>
+                <li><a href="#">마킹기 조회</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="depth2-bg"></div><!--.depth2-bg-->
+
+        <div class="lang-menu">
+          <ul>
+            <li class="lang-korea main-color-orange">KR<span></span></li>
+            <li class="lang-en">EN</li>
+          </ul>
+        </div><!--.lang-menu-->
+
+        <div class="ham-menu">
+          <span class="ham-1"></span>
+          <span class="ham-2"></span>
+          <span class="ham-3"></span>
+        </div><!--.ham-menu-->
+      </div><!--.inner-->
+
+      <div class="mgnb-menu">
+        <ul class="mgnb font-weight-700">
+          <li>
+            <a href="#" class="arr">시스템 관리<span></span></a>
+            <ul class="depth2">
+              <li><a href="#">사용자 관리</a></li>
+              <li><a href="#">안돈 오작동값 세팅</a></li>
+              <li><a href="#">재로그인</a></li>
+              <li><a href="#">암호변경</a></li>
+              <li><a href="#">버전관리</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="arr">MOTOR 제품포장관리<span></span></a>
+            <ul class="depth2">
+              <li><a href="#">테슬라 제품포장등록</a></li>
+              <li><a href="#">가공추적조회</a></li>
+              <li><a href="#">공정품질조회</a></li>
+              <li><a href="#">가공설비조회</a></li>
+              <li><a href="#">마감정보등록</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="arr">INVERTER 제품포장관리<span></span></a>
+            <ul class="depth2">
+              <li><a href="#">테슬라 제품포장등록</a></li>
+              <li><a href="#">가공추적조회</a></li>
+              <li><a href="#">공정품질조회</a></li>
+              <li><a href="#">가공설비조회</a></li>
+              <li><a href="#">마감정보등록</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="arr">모니터링<span></span></a>
+            <ul class="depth2">
+              <li><a href="#">[MOTOR] MONITORING</a></li>
+              <li><a href="#">[INVERTER] MONITORING</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="arr">관리자 메뉴<span></span></a>
+            <ul class="depth2">
+              <li><a href="#">후보정 NG 관리</a></li>
+              <li><a href="#">마스터 모드 관리</a></li>
+              <li><a href="#">소재투입 횟수 관리</a></li>
+              <li><a href="#">누락정보등록</a></li>
+              <li><a href="#">마킹기 조회</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--.mgnb-menu-->
+    </header>
+
+    <form action="#">
+      <div class="sys-ads-kr-content-wrap mm-tppr-kr">
+        <div class="sys-ads-kr-content-inner type02">
+          <div class="sys-ads-kr-content-header">
+            <p class="font-weight-400 main-color-blue font-size-16">TESLA PRODUCT PACKAGING REGIST</p>
+            <h3 class="font-weight-700">[MOTOR] 테슬라 제품포장등록</h3>
+          </div><!--.sys-ads-kr-content-header-->
+          <div class="search-condition-kr">
+            <div class="src-con-tab font-weight-400"><span>검색조건</span></div>
+            <div class="src-con-content mm-tppr-kr-content">
+              <div class="datewrap">
+                <div class="mm-tppr-kr-item">
+                  <p class="font-size-18 font-weight-400"><span>포장일자</span></p>
+                  <div class="datebox mm-tppr-kr-datebox">
+                    <input type="date" name="" id="item-date01">
+                    <span>~</span>
+                    <input type="date" name="" id="item-date02">
+                  </div><!--datebox-->
+                </div><!--src-item-->
+              </div><!--.datewrap-->
+              <div class="mm-tppr-kr-operation">
+                <p class="font-size-18 font-weight-400">테슬라 포장번호</p>
+                <div class="mm-tppr-kr-txtboxwrap">
+                  <div class="txtbox">
+                    <input type="text" name="" id="item-txt">
+                    <label for="item-txt"></label>
+                  </div><!--.txtbox-->
+                </div><!--mm-tppr-kr-txtboxwrap-->
+              </div><!--sys-operation-->
+              <div class="btn mm-tppr-kr-btn font-size-18">
+                <button type="button" id="search"><a href="#"></a><span class="font-size-18">조회</span><span
+                    class="sc-key">(F5)</span></button>
+                <button type="button" id="add"><a href="#"></a><span class="font-size-18">추가</span><span
+                    class="sc-key">(F1)</span></button>
+                <button type="button" id="del"><a href="#"></a><span class="font-size-18">삭제</span><span
+                    class="sc-key">(F4)</span></button>
+                <button type="button" id="excel"><a href="#"></a><span class="font-size-18">엑셀</span><span
+                    class="sc-key">(F8)</span></button>
+              </div><!--btn mm-tppr-kr-btn font-size-18-->
+
+            </div><!--src-con-content-->
+
+            <div class="sys-ads-kr-table-box type06">
+              <div class="mm-ppi-kr-wrap01">
+                <div class="src-table-tab font-weight-400"><span>포장등록현황</span></div>
+                <div class="sys-ads-kr-table-box type02">
+                  <div class="sys-ads-kr-table-wrap type02">
+                    <table id="table">
+                      <thead>
+                        <tr>
+                          <th>0</th>
+                          <th>테슬라 포장번호</th>
+                          <th>포장일자</th>
+                          <th>작업자</th>
+                          <th>등록일자</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>OP20 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>OP30 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>쿨링컨베어</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>자동검사기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>CMM</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>단품 LEAK TESTER</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>OIL SEAL 조립기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>조립 LEAK TESTER</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>S/Piunquer 조립기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td>Bushing 조립기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td>E/P 검사기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td>2D 마킹기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td>2D 마킹기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td>2D 마킹기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td>2D 마킹기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>16</td>
+                          <td>2D 마킹기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>17</td>
+                          <td>2D 마킹기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>18</td>
+                          <td>2D 마킹기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>19</td>
+                          <td>2D 마킹기</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div><!--.sys-ads-kr-table-wrap type02-->
+                  <div class="sys-ads-kr-table-wrap type03">
+                    <table id="table">
+                      <thead>
+                        <tr>
+                          <th>0</th>
+                          <th>가공 출하 시리얼</th>
+                          <th>소재시리얼</th>
+                          <th>가공호기</th>
+                          <th>가공시리얼</th>
+                          <th>생산국가</th>
+                          <th>금형번호</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>16</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>17</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>18</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>19</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                        <tr>
+                          <td>20</td>
+                          <td>OP10 가공</td>
+                          <td>-1</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                          <td>-1</td>
+                          <td>테스트</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div><!--.sys-ads-kr-table-wrap type02-->
+                </div><!--.sys-ads-kr-table-box type02-->
+              </div><!--.mm-ppi-kr-wrap02-->
+            </div><!--.sys-ads-kr-table-box type06-->
+          </div>
+        </div><!--.sys-ads-kr-content-inner type02-->
+      </div><!--.sys-ads-kr-content-wrap-->
+    </form>
+    <footer>
+      <div class="f-inner">
+        <p class="font-size-12 font-weight-400">Copyright PinelT MES Ver.1.0.01</p>
+        <p class="font-size-12 font-weight-400">현재 접속자 : Manager</p>
+      </div><!--.f-inner-->
+    </footer>
+  </div><!--#sys-wrap-->
+</body>
+
+</html>

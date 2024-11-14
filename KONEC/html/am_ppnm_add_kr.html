@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>[관리자]마감정보 등록</title>
+
+  <link rel="stylesheet" href="../css/import.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/common.js"></script>
+
+</head>
+
+<body>
+  <div id="sys-wrap">
+    <form action="#">
+      <div class="am-ppnm-add-kr-modal">
+        <div class="am-ppnm-add-kr-popup">
+          <div class="am-ppnm-add-kr-popup-header">
+            <h6 class="am-ppnm-add-kr-tit">[관리자]마킹기 정보 수동등록</h6>
+            <a href="#" class="am-ppnm-add-kr-close"></a><!--.close-->
+          </div><!--.popup-header-->
+          <div class="am-ppnm-add-kr-popup-body">
+            <label for="am-ppnm-add-kr-toggle-box" class="am-ppnm-add-kr-toggle-name db">연결DB</label>
+            <div class="am-ppnm-add-kr-toggle-box">
+              <label for="toggle" class="toggleSwitch" id="toggleSwitch">
+                <div class="toggle-txt">
+                  <span class="motor">MOTOR</span>
+                  <span class="inverter">INVERTER</span>
+                </div>
+                <button type="button" class="toggleButton"></button>
+              </label>
+            </div><!--.toggle-box-->
+            <div class="am-ppnm-add-kr-input-wrap">
+              <div class="am-ppnm-add-kr-serial01 am-ppnm-add-kr-set">
+                <div class="am-ppnm-add-kr-lb-wrap">
+                  <label for="item-txt01">소재 시리얼</label>
+                </div><!--.lb-wrap-->
+                <div class="am-ppnm-add-kr-ipt-wrap">
+                  <input type="text" id="item-txt01" class="am-ppnm-add-kr-ipt">
+                </div><!--.ipt-wrap-->
+              </div><!---->
+              <div class="am-ppnm-add-kr-serial02 am-ppnm-add-kr-set">
+                <div class="am-ppnm-add-kr-lb-wrap">
+                  <label for="item-txt02">가공 출하 시리얼</label>
+                </div><!--.lb-wrap-->
+                <div class="am-ppnm-add-kr-ipt-wrap">
+                  <input type="text" id="item-txt02" class="am-ppnm-add-kr-ipt">
+                </div><!--.ipt-wrap-->
+              </div><!---->
+            </div><!--.input-wrap-->
+            <div class="btn am-ppnm-add-kr-btn">
+              <button type="button" id="reset"><a href="#"></a><span class="font-size-18">초기화</span><span
+                  class="sc-key">(F1)</span></button>
+              <button type="button" id="save"><a href="#"></a><span class="font-size-18">저장</span><span
+                  class="sc-key">(F3)</span></button>
+              <button type="button" id="close"><a href="#"></a><span class="font-size-18">닫기</span><span
+                  class="sc-key">(ESC)</span></button>
+            </div><!--.btn am-ppnm-add-kr-btn-->
+          </div><!--.popup-body-->
+        </div><!--.popup-->
+      </div><!--.modal-->
+    </form>
+  </div><!--#sys-wrap-->
+</body>
+
+</html>
