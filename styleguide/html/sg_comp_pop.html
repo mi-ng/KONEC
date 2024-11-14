@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM GUIDE</title>
+
+  <link rel="stylesheet" href="../../css/import.css">
+
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/style_guide.js"></script>
+</head>
+<body>
+  <div id="sg-sys-wrap">
+    <div class="menu">
+      <div class="sg-logo-wrap">
+        <h1><a href="../../index.html">logo</a></h1>
+        <p class="font-weight-500">
+          KONEC<br>
+          WEB UI<br>
+          STYLE GUIDE
+        </p>
+      </div><!--sg-logo-wrap-->
+
+      <div class="gnb-wrap">
+        <ul class="sg-gnb">
+          <li>
+            <a href="style_guide.html">
+              RULE GUIDE
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="style_guide.html">네임 작성 규칙</a></li>
+              <li><a href="sg_rule_fold.html">파일 / 폴더 구조</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="sg_layout_basic_pc.html">
+              LAYOUT
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="sg_layout_basic_pc.html">BASIC</a></li>
+              <li><a href="sg_layout_login.html">LOGIN</a></li>
+              <li><a href="sg_layout_main.html">MAIN PAGE</a></li>
+              <li><a href="sg_layout_sub.html">SUB PAGE</a></li>
+            </ul>
+          </li>
+
+          <li class="active">
+            <a href="sg_comp_font.html">
+              COMPONENT
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: block;">
+              <li><a href="sg_comp_font.html">FONT</a></li>
+              <li><a href="sg_comp_color.html">COLOR</a></li>
+              <li><a href="sg_comp_button.html">BUTTON</a></li>
+              <li><a href="sg_comp_input.html">FORM</a></li>
+              <li><a href="sg_comp_table.html">TABLE</a></li>
+              <li class="active"><a href="sg_comp_pop.html">POP UP</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="sg_page_kr_sys.html">
+              PAGE LIST_KR
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="sg_page_kr_sys.html">로그인 / 시스템 관리</a></li>
+              <li><a href="sg_page_kr_motor.html">MOTOR 제품포장관리</a></li>
+              <li><a href="sg_page_kr_inver.html">INVERTER 제품포장관리</a></li>
+              <li><a href="sg_page_kr_moni_motor.html">모니터링</a></li>
+              <li><a href="sg_page_kr_admin.html">관리자 메뉴</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="sg_page_en_sys.html">
+              PAGE LIST_EN
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="sg_page_en_sys.html">Login / System MANAGEMENT</a></li>
+              <li><a href="sg_page_en_motor.html">MOTOR MANAGEMENT</a></li>
+              <li><a href="sg_page_en_inver.html">INVERTER MANAGEMENT</a></li>
+              <li><a href="sg_page_en_moni_motor.html">MONITORING</a></li>
+              <li><a href="sg_page_en_admin.html">ADMIN MENU</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="sg-container">
+      
+      <div class="sg-comp-popup">
+        <h2>
+          COMPONENT
+          <span>POP UP</span>
+        </h2>
+        <h3>POP UP</h3>
+        <p>기본 팝업의 경우에는 클래스 popup 추가하여 사용합니다.</p>
+
+        <div class="sg-comp-popup-wrap">
+          <div class="popup-box">
+            <div class="popup01">
+              <span>기본 팝업</span>
+              <div class="p-basic">BASIC</div>
+            </div><!--popup01-->
+  
+            <div class="popup02">
+              <span>안내 팝업</span>
+              <div class="p-alert">ALERT</div>
+            </div><!--popup02-->
+
+            <div class="popup03">
+              <span>팝업 세트</span>
+              <a href="../../html/event_popup.html" class="p-set">SET</a>
+            </div><!--popup02-->
+          </div>
+        </div><!--sg-comp-popup-wrap-->
+      </div><!--sg-comp-popup-->
+
+        <form action="#">
+         <div class="mm-ppi-add-kr-modal">
+           <div class="mm-ppi-add-kr-popup">
+             <div class="mm-ppi-add-kr-popup-header">
+               <h6 class="mm-ppi-add-kr-tit">[INVERTER]마킹기 정보 수동등록</h6>
+               <a href="#" class="mm-ppi-add-kr-close"></a><!--.close-->
+             </div><!--.popup-header-->
+             <div class="mm-ppi-add-kr-popup-body">
+               <label for="mm-ppi-add-kr-toggle-box" class="mm-ppi-add-kr-toggle-name db">연결DB</label>
+               <div class="mm-ppi-add-kr-toggle-box">
+                 <label for="toggle" class="toggleSwitch" id="toggleSwitch">
+                   <div class="toggle-txt">
+                     <span class="motor">MOTOR</span>
+                     <span class="inverter">INVERTER</span>
+                   </div>
+                   <button type="button" class="toggleButton"></button>
+                 </label>
+               </div><!--.toggle-box-->
+               <div class="mm-ppi-add-kr-input-wrap">
+                 <div class="mm-ppi-add-kr-serial01 mm-ppi-add-kr-set">
+                   <div class="mm-ppi-add-kr-lb-wrap">
+                     <label for="item-txt01">소재 시리얼</label>
+                   </div><!--.lb-wrap-->
+                   <div class="mm-ppi-add-kr-ipt-wrap">
+                     <input type="text" id="item-txt01" class="mm-ppi-add-kr-ipt">
+                   </div><!--.ipt-wrap-->
+                 </div><!---->
+                 <div class="mm-ppi-add-kr-serial02 mm-ppi-add-kr-set">
+                   <div class="mm-ppi-add-kr-lb-wrap">
+                     <label for="item-txt02">가공 출하 시리얼</label>
+                   </div><!--.lb-wrap-->
+                   <div class="mm-ppi-add-kr-ipt-wrap">
+                     <input type="text" id="item-txt02" class="mm-ppi-add-kr-ipt">
+                   </div><!--.ipt-wrap-->
+                 </div><!---->
+               </div><!--.input-wrap-->
+               <div class="btn mm-ppi-add-kr-btn">
+                 <button type="button" id="reset"><a href="#"></a><span class="font-size-18">초기화</span><span
+                   class="sc-key">(F1)</span></button>
+                 <button type="button" id="save"><a href="#"></a><span class="font-size-18">저장</span><span
+                   class="sc-key">(F3)</span></button>
+                   <button type="button" id="close"><a href="#"></a><span class="font-size-18">닫기</span><span
+                     class="sc-key">(ESC)</span></button>
+               </div><!--.btn mm-ppi-add-kr-btn-->
+             </div><!--.popup-body-->
+           </div><!--.popup-->
+         </div><!--.modal-->
+        </form><!--#sys-wrap 일반 팝업-->
+    
+    </div><!--#sg-container-->
+
+    <div class="sg-alert-pop-wrap">
+      <div class="sg-pop-dim"></div>
+      <div class="ev-popup example02">
+        <div class="ev-popup-header">
+          <p class="ev-popup-tit">경고 혹은 안내창</p>
+          <div class="ev-close"></div>
+        </div><!--.ev-popup-header-->
+        <div class="ev-popup-body">
+          <p class="ev-popup-txt">경고 혹은 안내창의 내용.</p>
+          <div class="ev-btn">
+            <button type="button" class="ev-button ev-button-hov02 ev-button-yes">YES</button>
+            <button type="button" class="ev-button ev-button-hov01 ev-button-no">NO</button>
+          </div><!--.ev-btn-->
+        </div><!--.ev-popup-body-->
+      </div><!--.example02-->
+    </div>
+    
+
+  </div><!--#sg-sys-wrap-->
+</body>
+</html>

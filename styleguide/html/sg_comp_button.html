@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUTTON GUIDE</title>
+
+  <link rel="stylesheet" href="../../css/import.css">
+
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/style_guide.js"></script>
+</head>
+<body>
+  <div id="sg-sys-wrap">
+    <div class="menu">
+      <div class="sg-logo-wrap">
+        <h1><a href="../../index.html">logo</a></h1>
+        <p class="font-weight-500">
+          KONEC<br>
+          WEB UI<br>
+          STYLE GUIDE
+        </p>
+      </div><!--sg-logo-wrap-->
+
+      <div class="gnb-wrap">
+        <ul class="sg-gnb">
+          <li>
+            <a href="style_guide.html">
+              RULE GUIDE
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="style_guide.html">네임 작성 규칙</a></li>
+              <li><a href="sg_rule_fold.html">파일 / 폴더 구조</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="sg_layout_basic_pc.html">
+              LAYOUT
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="sg_layout_basic_pc.html">BASIC</a></li>
+              <li><a href="sg_layout_login.html">LOGIN</a></li>
+              <li><a href="sg_layout_main.html">MAIN PAGE</a></li>
+              <li><a href="sg_layout_sub.html">SUB PAGE</a></li>
+            </ul>
+          </li>
+
+          <li class="active">
+            <a href="sg_comp_font.html">
+              COMPONENT
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: block;">
+              <li><a href="sg_comp_font.html">FONT</a></li>
+              <li><a href="sg_comp_color.html">COLOR</a></li>
+              <li class="active"><a href="sg_comp_button.html">BUTTON</a></li>
+              <li><a href="sg_comp_input.html">FORM</a></li>
+              <li><a href="sg_comp_table.html">TABLE</a></li>
+              <li><a href="sg_comp_pop.html">POP UP</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="sg_page_kr_sys.html">
+              PAGE LIST_KR
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="sg_page_kr_sys.html">로그인 / 시스템 관리</a></li>
+              <li><a href="sg_page_kr_motor.html">MOTOR 제품포장관리</a></li>
+              <li><a href="sg_page_kr_inver.html">INVERTER 제품포장관리</a></li>
+              <li><a href="sg_page_kr_moni_motor.html">모니터링</a></li>
+              <li><a href="sg_page_kr_admin.html">관리자 메뉴</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="sg_page_en_sys.html">
+              PAGE LIST_EN
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="sg_page_en_sys.html">Login / System MANAGEMENT</a></li>
+              <li><a href="sg_page_en_motor.html">MOTOR MANAGEMENT</a></li>
+              <li><a href="sg_page_en_inver.html">INVERTER MANAGEMENT</a></li>
+              <li><a href="sg_page_en_moni_motor.html">MONITORING</a></li>
+              <li><a href="sg_page_en_admin.html">ADMIN MENU</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="sg-container">
+      <div class="sg-comp-button-wrap">
+        <h2>
+          COMPONENT
+          <span>BUTTON</span>
+        </h2>
+        <h3>버튼 기본형</h3>
+        <p>서브 페이지의 버튼은 내용에 따라 사이즈를 다르게 사용합니다.</p>
+        
+        <div class="sg-comp-button">
+          <span class="button-txt">PC : 160px * 54px / TABLET : 100px * 40px / MOBILE : 80px * 32px </span>
+          <div class="sub-button btn">
+            <button type="button" id="search"><a href="#"></a><span class="font-size-18">조회</span><span class="sc-key">(F5)</span></button>
+            <button type="button" id="add"><a href="#"></a><span class="font-size-18">추가</span><span class="sc-key">(F1)</span></button>
+            <button type="button" id="del"><a href="#"></a><span class="font-size-18">삭제</span><span class="sc-key">(F4)</span></button>
+            <button type="button" id="excel"><a href="#"></a><span class="font-size-18">엑셀</span><span class="sc-key">(F8)</span></button>
+            <button type="button" id="save"><a href="#"></a><span class="font-size-16">저장</span><span class="sc-key">(F3)</span></button>
+          </div><!--sub-button btn-->
+        </div><!--sg-comp-button-->
+        <div class="sg-comp-button">
+          <span class="button-txt">PC : 160px * 54px / TABLET : 110px * 40px / MOBILE : 100px * 32px </span>
+          <div class="sub-button btn">
+            <button type="button" id="reset"><a href="#"></a><span class="font-size-16">초기화</span><span class="sc-key">(F1)</span></button>
+            <button type="button" id="close"><a href="#"></a><span class="font-size-16">닫기</span><span class="sc-key">(ESC)</span></button>
+            <button type="button" id="upload"><a href="#"></a><span class="font-size-16">파일업로드</span></button>
+          </div>
+        </div><!--sg-comp-button-->
+        <div class="sg-comp-button">
+          <span class="button-txt">PC : 200px * 54px / TABLET : 155px * 40px / MOBILE : 136px * 32px</span>
+          <div class="sub-button btn">
+            <button type="button" id="continu-save"><a href="#"></a><span class="font-size-16">연속저장</span><span class="sc-key">(F2)</span></button>
+            <button type="button" id="marking"><a href="#"></a><span class="font-size-16">마킹정보등록</span></button>
+          </div><!--sub-button btn-->
+        </div><!--sg-comp-button-->
+
+        <div class="sg-comp-button02 btn">
+          <div class="btn-ok">
+            <button type="button" id="ok"><a href="#"></a>
+              <p class="font-size-18">OK처리</p>
+            </button>
+          </div><!--btn-ok-->
+        </div><!--sg-comp-button02 btn-->
+
+        <div class="sg-comp-button03">
+            <div class="submit">
+              <input id="submit" type="submit" name="submit" value="LOGIN">
+              <label for="submit">
+                <span class="on submit-txt">로그인</span>
+                <span class="img"></span>
+              </label>
+            </div><!--submit-->
+        </div><!--sg-comp-button03-->
+
+        <span class="button-info-txt font-weight-500">* Tablet / Mobile 버전은 브라우저 사이즈를 줄여서 확인 가능합니다.</span>
+      </div><!--sg-comp-button-->
+    </div><!--#sg-container-->
+  </div><!--#sys-wrap-->
+</body>
+</html>

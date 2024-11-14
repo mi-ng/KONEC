@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM GUIDE</title>
+
+  <link rel="stylesheet" href="../../css/import.css">
+
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/style_guide.js"></script>
+</head>
+<body>
+  <div id="sg-sys-wrap">
+    <div class="menu">
+      <div class="sg-logo-wrap">
+        <h1><a href="../../index.html">logo</a></h1>
+        <p class="font-weight-500">
+          KONEC<br>
+          WEB UI<br>
+          STYLE GUIDE
+        </p>
+      </div><!--sg-logo-wrap-->
+
+      <div class="gnb-wrap">
+        <ul class="sg-gnb">
+          <li>
+            <a href="style_guide.html">
+              RULE GUIDE
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="style_guide.html">네임 작성 규칙</a></li>
+              <li><a href="sg_rule_fold.html">파일 / 폴더 구조</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="sg_layout_basic_pc.html">
+              LAYOUT
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="sg_layout_basic_pc.html">BASIC</a></li>
+              <li><a href="sg_layout_login.html">LOGIN</a></li>
+              <li><a href="sg_layout_main.html">MAIN PAGE</a></li>
+              <li><a href="sg_layout_sub.html">SUB PAGE</a></li>
+            </ul>
+          </li>
+
+          <li class="active">
+            <a href="sg_comp_font.html">
+              COMPONENT
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: block;">
+              <li><a href="sg_comp_font.html">FONT</a></li>
+              <li><a href="sg_comp_color.html">COLOR</a></li>
+              <li><a href="sg_comp_button.html">BUTTON</a></li>
+              <li class="active"><a href="sg_comp_input.html">FORM</a></li>
+              <li><a href="sg_comp_table.html">TABLE</a></li>
+              <li><a href="sg_comp_pop.html">POP UP</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="sg_page_kr_sys.html">
+              PAGE LIST_KR
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="sg_page_kr_sys.html">로그인 / 시스템 관리</a></li>
+              <li><a href="sg_page_kr_motor.html">MOTOR 제품포장관리</a></li>
+              <li><a href="sg_page_kr_inver.html">INVERTER 제품포장관리</a></li>
+              <li><a href="sg_page_kr_moni_motor.html">모니터링</a></li>
+              <li><a href="sg_page_kr_admin.html">관리자 메뉴</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="sg_page_en_sys.html">
+              PAGE LIST_EN
+              <span class="sg-gnb-bar"></span>
+            </a>
+            <ul class="sg-depth2" style="display: none;">
+              <li><a href="sg_page_en_sys.html">Login / System MANAGEMENT</a></li>
+              <li><a href="sg_page_en_motor.html">MOTOR MANAGEMENT</a></li>
+              <li><a href="sg_page_en_inver.html">INVERTER MANAGEMENT</a></li>
+              <li><a href="sg_page_en_moni_motor.html">MONITORING</a></li>
+              <li><a href="sg_page_en_admin.html">ADMIN MENU</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="sg-container">
+      <div class="sg-comp-input">
+        <h2>
+          COMPONENT
+          <span>FORM</span>
+        </h2>
+        <div class="sg-comp-input-text">
+          <h3>INPUT BOX_text</h3>
+          <p>input type=“text” 입니다. 기본, readonly, disabled 각각 구분하여 사용합니다.</p>
+          <div class="sg-comp-input-text-wrap">
+            <div class="input-text-a">
+              <div class="type">
+                <span>Type A</span>
+              </div><!--type-->
+              <div class="type-a-f-wrap">
+                <div class="text-basic-wrap">
+                  <span class="input-tit">기본형 / readonly</span>
+                  <div class="text-basic btn">
+                    <div class="txtbox">
+                      <input type="text" name="" id="item-txt">
+                      <label for="item-txt"></label>
+                    </div><!--.txtbox-->
+                  </div><!--text-basic btn-->
+                </div><!--기본형 박스-->
+                <div class="text-basic-wrap">
+                  <span class="input-tit">disabled</span>
+                  <div class="text-basic sys-pvm-add-kr-ipt-wrap">
+                    <input type="text" id="item-txt02" class="sys-pvm-add-kr-ipt" placeholder="Everest_Hotston" disabled style="cursor: default;">
+                  </div><!--.ipt-wrap-->
+                </div><!--disabled 박스-->
+              </div><!--type-a-f-wrap-->
+            </div><!--input-text-a--><!--텍스트박스 A타입 전체 감싸기-->
+            <div class="input-text-b">
+              <div class="type">
+                <span>Type B</span>
+              </div><!--type-->
+              <div class="text-login-wrap">
+                <span class="input-tit">로그인 페이지</span>
+                <div class="login-info">
+                  <input id="login" type="text" name="info" value="" placeholder="로그인">
+                  <label for="login"></label>
+                </div><!--login-info-->
+              </div>
+            </div><!--input-text-b-->
+          </div><!--sg-comp-input-text-wrap--><!--텍스트박스 전체 감싸기-->
+        </div><!--sg-comp-input-text-->
+
+        <div class="sg-comp-input-sc-wrap">
+          <div class="sg-comp-input-select">
+            <h3>INPUT BOX_select</h3>
+            <p>input type=“select”</p>
+            <div class="selectbox">
+
+              <select name="" id="select-tab">
+                <option value="">사용자 ID <span></span></option>
+                <option value="">사용자명</option>
+                <option value="">부서명</option>
+                <option value="">직위</option>
+                <option value="">연락처</option>
+              </select>
+            </div> <!--.selectbox-->
+          </div><!--sg-comp-input-select-->
+
+          <div class="sg-comp-input-check">
+            <h3>INPUT BOX_check</h3>
+            <p>input type=“checkbox”</p>
+            <div class="sg-comp-input-check-wrap">
+              <div class="input-check-a">
+                <div class="type">
+                  <span>Type A</span>
+                </div><!--type-->
+                <div class="save-info">
+                  <label for="save">
+                    <input id="save" type="checkbox" name="save">
+                    <span class="on"></span>
+                    <span class="save-txt">접속 정보 기억</span>
+                  </label>
+                </div><!--save-info-->
+              </div><!--타입 A-->
+              <div class="input-check-b">
+                <div class="type">
+                  <span>Type B</span>
+                </div><!--type-->
+                <div class="input-check">    
+                  <label for="user-check"></label>  
+                  <input type="checkbox" id="user-check">
+                </div><!--input-check-->
+              </div><!--type B-->
+            </div><!--체크박스 타입 전체 감싸기-->
+          </div><!--sg-comp-input-check-->
+        </div><!--select와 checkbox 감싸기-->
+
+        <div class="sg-comp-input-radio">
+          <h3>INPUT BOX_radio</h3>
+          <p>input type=“radio”</p>
+          <div class="sg-comp-input-radio-wrap">
+            <div class="input-radio-a">
+              <div class="type">
+                <span>Type A</span>
+              </div><!--type-->
+              <div class="name-inputbox">
+                <div class="inputbox">
+                  <div class="input-box">
+                    <label for="oper-all">
+                      <input type="radio" name="contact" id="oper-all" checked>
+                      <span>전체</span>
+                    </label>
+                  </div>
+                  <div class="input-box">
+                    <label for="oper-used">
+                      <input type="radio" name="contact" id="oper-used">
+                      <span>사용</span>
+                    </label>
+                  </div>
+                  <div class="input-box">
+                    <label for="oper-unused">
+                      <input type="radio" name="contact" id="oper-unused" >
+                      <span>미사용</span>
+                    </label>
+                  </div>
+                  <div class="input-box">
+                    <label for="oper-unused02">
+                      <input type="radio" name="contact" id="oper-unused02" disabled >
+                      <span>사용X</span>
+                    </label>
+                  </div>    
+                </div><!--.inputbox-->
+            
+              </div><!--.sys-inputbox-->
+            </div><!--input-radio-a-->
+            <div class="input-radio-b">
+              <div class="type">
+                <span>Type B</span>
+              </div><!--type-->
+              <div class="login-lang">
+                <input id="korean" type="radio" name="lang" checked="checked" value="한국어">
+                <label for="korean">한국어</label>
+                <input id="english" type="radio" name="lang" value="ENGLISH">
+                <label for="english">ENGLISH</label>
+              </div><!--login-lang-->
+            </div><!--input-radio-b-->
+            <div class="input-radio-c">
+              <div class="type">
+                <span>Type C</span>
+              </div><!--type-->
+              <label for="toggle" class="toggleSwitch">
+                <div class="toggle-txt">
+                  <span class="motor">MOTOR</span>
+                  <span class="inverter">INVERTER</span>
+                </div>
+                <button type="button" class="toggleButton"></button>
+              </label>
+            </div><!--input-radio-c-->
+          </div><!--radio 전체 감싸기-->
+        </div><!--sg-comp-input-radio-->
+
+        <div class="sg-comp-input-calendar">
+          <h3>CALENDAR</h3>
+          <div class="datebox">
+            <input type="date" name="" id="item-date">
+            <span>~</span>
+            <input type="date" name="" id="item-date">
+          </div><!--datebox-->
+        </div><!--sg-comp-input-calendar-->
+      </div><!--sg-comp-input-->
+    </div><!--#sg-container-->
+  </div><!--#sys-wrap-->
+</body>
+</html>
