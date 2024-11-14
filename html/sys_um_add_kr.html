@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>사용자 등록</title>
+
+  <link rel="stylesheet" href="../css/import.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="sys-um-add-kr-dim"></div>
+    <form action="#" enctype="multipart/form-data">
+      <div class="sys-um-add-kr-pop">
+        <h3 class="font-weight-700">사용자 등록</h3>
+        <div class="pop-close"></div>
+        <div class="sys-um-add-kr-pop-wrap">
+          <div class="sys-um-add-kr-pop-content">
+            <div class="sys-um-add-kr-up">
+              <div class="input-txt user-code font-weight-500">
+                <!--사용자코드 txtbox-->
+                <div class="txtbox">
+                  <div class="span-box">
+                    <label for="item-txt-code01">사용자코드</label>
+                  </div><!--.span-box-->
+                  <div class="input-box">
+                    <input type="text" name="" id="item-txt-code01">
+                  </div><!--.input-box-->
+                </div><!--.txtbox-->
+              </div><!--input-txt user-code-->
+
+              <div class="input-txt user-id">
+                <!--사용자 ID div-->
+                <div class="txtbox">
+                  <div class="span-box">
+                    <span class="red-star">* </span><label for="item-txt-code02">사용자ID</label>
+                  </div><!--.span-box-->
+                  <div class="input-box">
+                    <input type="text" name="" id="item-txt-code02">
+                    <div class="sys-um-add-over-check">중복확인</div><!--중복확인버튼-->
+                  </div><!--.input-box-->
+                </div><!--.txtbox-->
+              </div><!--input-txt user-id-->
+
+              <div class="input-txt input-pass">
+                <!--비밀번호 div-->
+
+                <div class="passbox">
+                  <div class="span-box">
+                    <span class="red-star">* </span><label for="item-password01">비밀번호</label>
+                  </div><!--.span-box-->
+                  <div class="input-box">
+                    <input type="password" name="" id="item-password01">
+
+                  </div><!--.input-box-->
+                </div><!--.passbox-->
+
+              </div><!--input-txt user-pass-->
+
+              <div class="input-txt input-pass-check">
+                <!--비밀번호 확인 div-->
+                <div class="passbox">
+                  <div class="span-box">
+                    <span class="red-star">* </span><label for="item-password02">비밀번호 확인</label>
+                  </div><!--.span-box-->
+                  <div class="input-box">
+                    <input type="password" name="" id="item-password02">
+                  </div><!--.input-box-->
+                </div><!--.passbox-->
+
+              </div><!--input-txt user-pass-check-->
+
+              <div class="input-check">
+                <div class="span-box">
+                  <label for="user-check" class="font-size-18">사용여부</label>
+                </div><!--span-box-->
+                <div class="input-check">
+                  <input type="checkbox" id="user-check">
+                </div><!--input-check-->
+              </div><!--input-txt user-check-->
+              <p class="rule">*비밀번호 형식<br>
+                1. 영어 대or소문자 1자리<br>
+                2. 숫자 4자리</p>
+            </div><!--sys-um-add-kr-box-->
+
+            <div class="sys-um-add-kr-img">
+              <div class="file-label">
+                <label for="choose-file">
+                  <div class="file-label-img">
+                    <div class="drop-img"></div>
+                    <span>드래그 & 드롭 또는<br>
+                      클릭하여 이미지를 추가해주세요
+                    </span>
+                  </div>
+                </label>
+              </div>
+              <input class="file" type="file" id="choose-file" onchange="dropFile.handleFiles(this.files)"
+                accept="image/png, image/jpeg, image/gif">
+              <div class="sys-um-add-kr btn">
+                <button type="button" id="add"><a href="#"></a><span class="font-size-18">추가</span><span
+                    class="sc-key">(F1)</span></button>
+                <button type="button" id="del"><a href="#"></a><span class="font-size-18">삭제</span><span
+                    class="sc-key">(F4)</span></button>
+              </div>
+            </div><!--sys-um-add-kr-img-->
+          </div><!--sys-um-add-kr-pop-content-->
+
+          <div class="line"></div>
+          <div class="sys-um-add-kr-pop-content02">
+            <div class="sys-um-add-kr-down-wrap">
+
+              <div class="selectbox font-weight-500 ">
+                <div class="span-box"><span class="font-size-18">부서명</span></div>
+                <select name="" id="select-tab">
+                  <option value="">A<span></span></option>
+                  <option value="">B</option>
+                  <option value="">C</option>
+                  <option value="">D</option>
+                  <option value="">E</option>
+                </select>
+              </div> <!--.selectbox-->
+
+              <div class="tel-box font-weight-500 ">
+                <div class="span-box"><span class="font-size-18">휴대폰<span></div>
+                <div class="input-tel-box">
+                  <input type="text" name="" id="item-txt-tel01" maxlength="3" pattern="^01[0-9]{1}"
+                    required="required">
+                  <label for="item-txt-tel01"></label><span></span>
+                  <input type="text" name="" id="item-txt-tel02" maxlength="4" pattern="[0-9]{4}" required="required">
+                  <label for="item-txt-tel02"></label><span></span>
+                  <input type="text" name="" id="item-txt-tel03" maxlength="4" pattern="[0-9]{4}" required="required">
+                  <label for="item-txt-tel03"></label>
+                </div><!--input-tel-box-->
+
+              </div><!--tel-box-->
+            </div><!--sys-um-add-kr-down-wrap-->
+            <div class="input-radiobox">
+              <div class="span-box"><span class="font-weight-500 font-size-18">사용자 권한</span></div><!--span-box-->
+              <div class="inputbox">
+                <div class="input-box">
+                  <label for="admin">
+                    <input type="radio" name="contact" id="admin" checked>
+                    <span>관리자</span>
+                  </label>
+                </div>
+                <div class="input-box">
+                  <label for="Produck/Package">
+                    <input type="radio" name="contact" id="Produck/Package">
+                    <span>생산/포장</span>
+                  </label>
+                </div>
+              </div><!--.inputbox-->
+            </div><!--input-radio-->
+
+            <div class="sys-um-add-kr2 btn">
+              <button type="button" id="reset"><a href="#"></a><span class="font-size-18">초기화</span><span
+                  class="sc-key">(F1)</span></button>
+              <button type="button" id="continu-save"><a href="#"></a><span class="font-size-18">연속저장</span><span
+                  class="sc-key">(F2)</span></button>
+              <button type="button" id="save"><a href="#"></a><span class="font-size-18">저장</span><span
+                  class="sc-key">(F3)</span></button>
+              <button type="button" id="close"><a href="#"></a><span class="font-size-18">닫기</span><span
+                  class="sc-key">(ESC)</span></button>
+            </div><!--sys-um-add-kr-up-->
+          </div><!--sys-um-add-kr2 btn-->
+        </div><!--sys-um-add-kr-pop-content02-->
+      </div><!--sys-um-add-kr-pop-wrap-->
+
+
+  </div><!--sys-um-add-kr-pop-->
+  </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>암호변경</title>
+  <link rel="stylesheet" href="../css/import.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+  <div id="sys-ads-add-kr-wrap">
+    <div class="sys-ads-add-kr-modal">
+      <div class="sys-ads-add-kr-popup">
+        <form action="#">
+          <div class="sys-ads-add-kr-popup-header">
+            <h6 class="sys-ads-add-kr-tit">암호변경</h6><!--.tit-->
+            <a href="#" class="sys-ads-add-kr-close"></a><!--.close-->
+          </div><!--.popup-header-->
+          <div class="sys-ads-add-kr-popup-body">
+            <div class="sys-ads-add-kr-id sys-ads-add-kr-set">
+              <div class="sys-ads-add-kr-lb-wrap">
+                <label for="sys-ads-add-kr-ipt01">사용자 ID</label>
+              </div><!--.lb-wrap-->
+              <div class="sys-ads-add-kr-ipt-wrap">
+                <input type="text" id="sys-ads-add-kr-ipt01" class="sys-ads-add-kr-ipt" placeholder="Admin" disabled>
+              </div><!--.ipt-wrap-->
+            </div><!--.id-->
+            <div class="sys-ads-add-kr-name sys-ads-add-kr-set ">
+              <div class="sys-ads-add-kr-lb-wrap">
+                <label for="sys-ads-add-kr-ipt02">사용자명</label>
+              </div><!--.lb-wrap-->
+              <div class="sys-ads-add-kr-ipt-wrap">
+                <input type="text" id="sys-ads-add-kr-ipt02"  class="sys-ads-add-kr-ipt" placeholder="Manager" disabled>
+              </div><!--.ipt-wrap--> 
+            </div><!--.name-->
+            <div class="sys-ads-add-kr-pw sys-ads-add-kr-pw-set sys-ads-add-kr-set">
+              <div class="sys-ads-add-kr-lb-wrap">
+                <label for="item-password01"><span>*</span>기존 비밀번호</label>
+              </div><!--.lb-wrap-->
+              <div class="sys-ads-add-kr-ipt-wrap">
+                <input type="password" id="item-password01"  class="sys-ads-add-kr-ipt">
+              </div><!--.ipt-wrap-->
+            </div><!--.pw-->
+            <div class="sys-ads-add-kr-new-pw sys-ads-add-kr-pw-set sys-ads-add-kr-set">
+              <div class="sys-ads-add-kr-lb-wrap">
+                <label for="item-password02"><span>*</span>새 비밀번호</label>
+              </div><!--.lb-wrap-->
+              <div class="sys-ads-add-kr-ipt-wrap">
+                <input type="password" id="item-password02" class="sys-ads-add-kr-ipt">
+              </div><!--.ipt-wrap-->
+            </div><!--.new-pw-->
+            <div class="sys-ads-add-kr-pw-check sys-ads-add-kr-pw-set sys-ads-add-kr-set">
+              <div class="sys-ads-add-kr-lb-wrap">
+                <label for="item-password03"><span>*</span>비밀번호 확인</label>
+              </div><!--.lb-wrap-->
+              <div class="sys-ads-add-kr-ipt-wrap">
+                <input type="password" id="item-password03" class="sys-ads-add-kr-ipt">
+              </div><!--.ipt-wrap-->
+            </div><!--.pw-check-->
+            <p class="sys-ads-add-kr-pw-rule">
+              *비밀번호 형식<br>
+              1. 영  대or소문자 1자리<br>
+              2. 숫자 4자리
+            </p>
+            <div class="btn sys-ads-add-kr-btn ">
+                 <button type="button" id="save"><a href="#"></a><span class="font-size-18">저장</span><span class="sc-key">(F3)</span></button>
+                 <button type="button" id="close"><a href="#"></a><span class="font-size-18">닫기</span><span class="sc-key">(ESC)</span></button>
+            </div><!--.button-box-->
+          </div><!--.popup-body-->
+        </form>
+      </div><!--.popup-->
+    </div><!--.modal-->
+  </div><!--#wrap-->
+</body>
+</html>

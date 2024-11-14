@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>작업환경설정</title>
+  <link rel="stylesheet" href="../css/import.css">
+  <link rel="stylesheet" href="../css/motor.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+  <div id="moni-wrap-add">
+    <div class="moni-dim"></div>
+    <form action="#">
+      <div class="setting-wrap">
+        <div class="setting-header">
+          <h3 class="font-size-16">작업 환경설정</h3>
+          <div class="setting-close"><a href="#">닫기</a></div><!--.setting-close-->
+        </div><!--.setting-header-->
+        <div class="setting-container-header">
+          <div class="ct-setting">
+            <p class="font-weight-500 font-size-16">C/T 설정</p>
+            <div class="txtbox setting">
+              <input type="text" name="" id="item-txt" placeholder="127">
+              <label for="item-txt"></label>
+            </div><!--.txtbox-->
+            <P class="font-weight-500">Sec</P>
+          </div><!--ct-setting-->
+          <div class="btn setting">
+            <button type="button" id="save"><a href="#"></a><span class="font-size-16">저장</span><span
+                class="sc-key">(F3)</span></button>
+            <button type="button" id="close"><a href="#"></a><span class="font-size-16">닫기</span><span
+                class="sc-key">(ESC)</span></button>
+          </div>
+        </div><!--.setting-container-header-->
+
+        <div class="setting-text">
+          <p class="font-weight-600">작업시간 ON/OFF 설정</p>
+        </div>
+        <div class="setting-table-box">
+          <div class="setting-table-wrap">
+            <table class="setting-table font-weight-600">
+              <thead>
+                <tr>
+                  <th>NO</th>
+                  <th>주간</th>
+                  <th>ON/OFF</th>
+                  <th>야간</th>
+                  <th>ON/OFF</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>08:00 ~ 09:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper1" id="oper-used01">
+                        <label for="oper-used01">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper1" id="oper-used02" checked>
+                        <label for="oper-used02">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>20:00 ~ 21~00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper2" id="oper-used03" checked>
+                        <label for="oper-used03">
+                          <span>ON</span>
+                        </label>
+                      </div><!--.input-box-->
+                      <div class="input-box">
+                        <input type="radio" name="oper2" id="oper-used04">
+                        <label for="oper-used04">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div><!--.inputbox setting-->
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>09:00 ~ 10:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper3" id="oper-used05" checked>
+                        <label for="oper-used05">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper3" id="oper-used06">
+                        <label for="oper-used06">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>21:00 ~ 22:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper4" id="oper-used07" checked>
+                        <label for="oper-used07">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper4" id="oper-used08">
+                        <label for="oper-used08">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>10:00 ~ 10:10 (10분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box ">
+                        <input type="radio" name="oper5" id="oper-used09">
+                        <label for="oper-used09">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box ">
+                        <input type="radio" name="oper5" id="oper-used10" checked>
+                        <label for="oper-used10">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>22:00 ~ 22:10 (10분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper6" id="oper-used11">
+                        <label for="oper-used11">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper6" id="oper-used12" checked>
+                        <label for="oper-used12">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>10:10 ~ 11:00 (50분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box ">
+                        <input type="radio" name="oper7" id="oper-used13" checked>
+                        <label for="oper-used13">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box ">
+                        <input type="radio" name="oper7" id="oper-used14">
+                        <label for="oper-used14">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>22:10 ~ 23:00 (50분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper8" id="oper-used15" checked>
+                        <label for="oper-used15">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper8" id="oper-used16">
+                        <label for="oper-used16">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>11:00 ~ 12:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper9" id="oper-used17" checked>
+                        <label for="oper-used17">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper9" id="oper-used18">
+                        <label for="oper-used18">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>00:00 ~ 01:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper10" id="oper-used19" checked>
+                        <label for="oper-used19">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper10" id="oper-used20">
+                        <label for="oper-used20">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>12:00 ~ 12:30 (30분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper11" id="oper-used21" checked>
+                        <label for="oper-used21">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper11" id="oper-used22">
+                        <label for="oper-used22">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>00:00 ~ 00:30 (30분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper12" id="oper-used23" checked>
+                        <label for="oper-used23">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper12" id="oper-used24">
+                        <label for="oper-used24">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>12:30 ~ 13:00 (30분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper13" id="oper-used25">
+                        <label for="oper-used25">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper13" id="oper-used26" checked>
+                        <label for="oper-used26">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>00:30 ~ 01:00 (30분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper14" id="oper-used27">
+                        <label for="oper-used27">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper14" id="oper-used28" checked>
+                        <label for="oper-used28">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>13:00 ~ 14:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper15" id="oper-used29" checked>
+                        <label for="oper-used29">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper15" id="oper-used30">
+                        <label for="oper-used30">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>01:00 ~ 02:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper16" id="oper-used31" checked>
+                        <label for="oper-used31">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper16" id="oper-used32">
+                        <label for="oper-used32">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>14:00 ~ 15:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper17" id="oper-used33" checked>
+                        <label for="oper-used33">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper17" id="oper-used34">
+                        <label for="oper-used34">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>02:00 ~ 03:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper18" id="oper-used35" checked>
+                        <label for="oper-used35">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper18" id="oper-used36">
+                        <label for="oper-used36">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>14:00 ~ 15:10 (10분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper19" id="oper-used37">
+                        <label for="oper-used37">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper19" id="oper-used38" checked>
+                        <label for="oper-used38">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>03:00 ~ 03:10 (10분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper20" id="oper-used39">
+                        <label for="oper-used39">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper20" id="oper-used40" checked>
+                        <label for="oper-used40">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>15:10 ~ 16:00 (50분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper21" id="oper-used41" checked>
+                        <label for="oper-used41">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper21" id="oper-used42">
+                        <label for="oper-used42">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>03:10 ~ 04:00 (50분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper22" id="oper-used43" checked>
+                        <label for="oper-used43">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper22" id="oper-used44">
+                        <label for="oper-used44">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>16:00 ~ 17:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper23" id="oper-used45" checked>
+                        <label for="oper-used45">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper23" id="oper-used46">
+                        <label for="oper-used46">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>04:00 ~ 05:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper24" id="oper-used47" checked>
+                        <label for="oper-used47">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper24" id="oper-used48">
+                        <label for="oper-used48">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>17:00 ~ 17:30 (30분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper25" id="oper-used49" checked>
+                        <label for="oper-used49">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper25" id="oper-used50">
+                        <label for="oper-used50">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>05:00 ~ 05:30 (30분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper26" id="oper-used51" checked>
+                        <label for="oper-used51">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper26" id="oper-used52">
+                        <label for="oper-used52">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>17:30 ~ 18:00 (30분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper27" id="oper-used53" checked>
+                        <label for="oper-used53">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper27" id="oper-used54">
+                        <label for="oper-used54">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>05:30 ~ 06:00 (30분)</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper28" id="oper-used55">
+                        <label for="oper-used55">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper28" id="oper-used56">
+                        <label for="oper-used56">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>18:00 ~ 19:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper29" id="oper-used57" checked>
+                        <label for="oper-used57">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper29" id="oper-used58">
+                        <label for="oper-used58">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>06:00 ~ 07:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper30" id="oper-used59" checked>
+                        <label for="oper-used59">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper30" id="oper-used60">
+                        <label for="oper-used60">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>19:00 ~ 20:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper31" id="oper-used61" checked>
+                        <label for="oper-used61">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper31" id="oper-used62">
+                        <label for="oper-used62">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>07:00 ~ 08:00</td>
+                  <td>
+                    <div class="inputbox setting">
+                      <div class="input-box">
+                        <input type="radio" name="oper32" id="oper-used63" checked>
+                        <label for="oper-used63">
+                          <span>ON</span>
+                        </label>
+                      </div>
+                      <div class="input-box">
+                        <input type="radio" name="oper32" id="oper-used64">
+                        <label for="oper-used64">
+                          <span>OFF</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table><!--.motor-table table01-->
+          </div><!--.setting-table-wrap-->
+        </div><!--.setting-table-box-->
+      </div><!--.setting-wrap-->
+    </form>
+  </div><!--#moni-wrap-add-->
+</body>
+
+</html>
